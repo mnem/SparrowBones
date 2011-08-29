@@ -15,7 +15,6 @@
 		BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */; };
 		BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB866EB5140C2F7100A188B5 /* MainWindow.xib */; };
 		BB866EBA140C2F7200A188B5 /* SparrowBonesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */; };
-		BB866EBD140C2F7200A188B5 /* SparrowBonesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */; };
 		BB866EC5140C2F7200A188B5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */; };
 		BB866EC6140C2F7200A188B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA3140C2F7100A188B5 /* UIKit.framework */; };
 		BB866EC7140C2F7200A188B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA5140C2F7100A188B5 /* Foundation.framework */; };
@@ -23,15 +22,43 @@
 		BB866ED0140C2F7200A188B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB866ECE140C2F7200A188B5 /* InfoPlist.strings */; };
 		BB866ED2140C2F7200A188B5 /* SparrowBonesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = BB866ED1140C2F7200A188B5 /* SparrowBonesTests.h */; };
 		BB866ED4140C2F7200A188B5 /* SparrowBonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866ED3140C2F7200A188B5 /* SparrowBonesTests.m */; };
+		BB873EC2140C369B005A6E14 /* libSparrow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB48C531140C3636006F1E54 /* libSparrow.a */; };
+		BB873EC4140C36A9005A6E14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC3140C36A9005A6E14 /* AudioToolbox.framework */; };
+		BB873EC6140C36EB005A6E14 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC5140C36EB005A6E14 /* AVFoundation.framework */; };
+		BB873EC8140C36F7005A6E14 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC7140C36F7005A6E14 /* OpenAL.framework */; };
+		BB873ECA140C3710005A6E14 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC9140C3710005A6E14 /* OpenGLES.framework */; };
+		BB873ECC140C3725005A6E14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECB140C3725005A6E14 /* QuartzCore.framework */; };
+		BB873ECE140C3739005A6E14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECD140C3739005A6E14 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB48C530140C3636006F1E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEFE4BC2101B317600E22471;
+			remoteInfo = Sparrow;
+		};
+		BB48C532140C3636006F1E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEEA9335101E32A30071DD21;
+			remoteInfo = UnitTests;
+		};
 		BB866EC9140C2F7200A188B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB866E96140C2F7100A188B5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BB866E9E140C2F7100A188B5;
 			remoteInfo = SparrowBones;
+		};
+		BB873EC0140C367E005A6E14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DEFE4BC1101B317600E22471;
+			remoteInfo = Sparrow;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,22 +67,28 @@
 		BB866EA3140C2F7100A188B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB866EA5140C2F7100A188B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BB866EAB140C2F7100A188B5 /* SparrowBones-Info.plist */ = {isa = PBXFileReference; path = "SparrowBones-Info.plist"; sourceTree = "<group>"; };
+		BB866EAB140C2F7100A188B5 /* SparrowBones-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SparrowBones-Info.plist"; sourceTree = "<group>"; };
 		BB866EAD140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB866EAF140C2F7100A188B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB866EB1140C2F7100A188B5 /* SparrowBones-Prefix.pch */ = {isa = PBXFileReference; path = "SparrowBones-Prefix.pch"; sourceTree = "<group>"; };
-		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
+		BB866EB1140C2F7100A188B5 /* SparrowBones-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SparrowBones-Prefix.pch"; sourceTree = "<group>"; };
+		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
 		BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesAppDelegate.m; sourceTree = "<group>"; };
 		BB866EB6140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
+		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
 		BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesViewController.m; sourceTree = "<group>"; };
-		BB866EBC140C2F7200A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SparrowBonesViewController.xib; sourceTree = "<group>"; };
 		BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparrowBonesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BB866ECD140C2F7200A188B5 /* SparrowBonesTests-Info.plist */ = {isa = PBXFileReference; path = "SparrowBonesTests-Info.plist"; sourceTree = "<group>"; };
+		BB866ECD140C2F7200A188B5 /* SparrowBonesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SparrowBonesTests-Info.plist"; sourceTree = "<group>"; };
 		BB866ECF140C2F7200A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB866ED1140C2F7200A188B5 /* SparrowBonesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesTests.h; sourceTree = "<group>"; };
 		BB866ED3140C2F7200A188B5 /* SparrowBonesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesTests.m; sourceTree = "<group>"; };
+		BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Sparrow.xcodeproj; sourceTree = SPARROW_SRC; };
+		BB873EC3140C36A9005A6E14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BB873EC5140C36EB005A6E14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB873EC7140C36F7005A6E14 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		BB873EC9140C3710005A6E14 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BB873ECB140C3725005A6E14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB873ECD140C3739005A6E14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +96,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB866EA4140C2F7100A188B5 /* UIKit.framework in Frameworks */,
-				BB866EA6140C2F7100A188B5 /* Foundation.framework in Frameworks */,
+				BB873EC4140C36A9005A6E14 /* AudioToolbox.framework in Frameworks */,
+				BB873EC6140C36EB005A6E14 /* AVFoundation.framework in Frameworks */,
 				BB866EA8140C2F7100A188B5 /* CoreGraphics.framework in Frameworks */,
+				BB866EA6140C2F7100A188B5 /* Foundation.framework in Frameworks */,
+				BB873EC8140C36F7005A6E14 /* OpenAL.framework in Frameworks */,
+				BB873ECA140C3710005A6E14 /* OpenGLES.framework in Frameworks */,
+				BB873ECC140C3725005A6E14 /* QuartzCore.framework in Frameworks */,
+				BB866EA4140C2F7100A188B5 /* UIKit.framework in Frameworks */,
+				BB873ECE140C3739005A6E14 /* libz.dylib in Frameworks */,
+				BB873EC2140C369B005A6E14 /* libSparrow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +123,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB48C52C140C3636006F1E54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB48C531140C3636006F1E54 /* libSparrow.a */,
+				BB48C533140C3636006F1E54 /* UnitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BB866E94140C2F7100A188B5 = {
 			isa = PBXGroup;
 			children = (
+				BB866EDD140C342000A188B5 /* Sparrow */,
 				BB866EA9140C2F7100A188B5 /* SparrowBones */,
 				BB866ECB140C2F7200A188B5 /* SparrowBonesTests */,
 				BB866EA2140C2F7100A188B5 /* Frameworks */,
@@ -105,10 +155,16 @@
 		BB866EA2140C2F7100A188B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BB866EA3140C2F7100A188B5 /* UIKit.framework */,
-				BB866EA5140C2F7100A188B5 /* Foundation.framework */,
+				BB873EC3140C36A9005A6E14 /* AudioToolbox.framework */,
+				BB873EC5140C36EB005A6E14 /* AVFoundation.framework */,
 				BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */,
+				BB866EA5140C2F7100A188B5 /* Foundation.framework */,
+				BB873EC7140C36F7005A6E14 /* OpenAL.framework */,
+				BB873EC9140C3710005A6E14 /* OpenGLES.framework */,
+				BB873ECB140C3725005A6E14 /* QuartzCore.framework */,
+				BB866EA3140C2F7100A188B5 /* UIKit.framework */,
 				BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */,
+				BB873ECD140C3739005A6E14 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,12 +172,9 @@
 		BB866EA9140C2F7100A188B5 /* SparrowBones */ = {
 			isa = PBXGroup;
 			children = (
-				BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */,
-				BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */,
-				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
+				BBC92D37140C4B180079158D /* App */,
 				BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */,
 				BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */,
-				BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */,
 				BB866EAA140C2F7100A188B5 /* Supporting Files */,
 			);
 			path = SparrowBones;
@@ -157,6 +210,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB866EDD140C342000A188B5 /* Sparrow */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */,
+			);
+			name = Sparrow;
+			sourceTree = "<group>";
+		};
+		BBC92D37140C4B180079158D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */,
+				BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */,
+				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +242,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB873EC1140C367E005A6E14 /* PBXTargetDependency */,
 			);
 			name = SparrowBones;
 			productName = SparrowBones;
@@ -214,6 +286,12 @@
 			mainGroup = BB866E94140C2F7100A188B5;
 			productRefGroup = BB866EA0140C2F7100A188B5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BB48C52C140C3636006F1E54 /* Products */;
+					ProjectRef = BB866EDE140C351300A188B5 /* Sparrow.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BB866E9E140C2F7100A188B5 /* SparrowBones */,
@@ -222,6 +300,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		BB48C531140C3636006F1E54 /* libSparrow.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparrow.a;
+			remoteRef = BB48C530140C3636006F1E54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB48C533140C3636006F1E54 /* UnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTest.octest;
+			remoteRef = BB48C532140C3636006F1E54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		BB866E9D140C2F7100A188B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -229,7 +324,6 @@
 			files = (
 				BB866EAE140C2F7100A188B5 /* InfoPlist.strings in Resources */,
 				BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */,
-				BB866EBD140C2F7200A188B5 /* SparrowBonesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +381,11 @@
 			target = BB866E9E140C2F7100A188B5 /* SparrowBones */;
 			targetProxy = BB866EC9140C2F7200A188B5 /* PBXContainerItemProxy */;
 		};
+		BB873EC1140C367E005A6E14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sparrow;
+			targetProxy = BB873EC0140C367E005A6E14 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -304,14 +403,6 @@
 				BB866EB6140C2F7100A188B5 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB866EBC140C2F7200A188B5 /* en */,
-			);
-			name = SparrowBonesViewController.xib;
 			sourceTree = "<group>";
 		};
 		BB866ECE140C2F7200A188B5 /* InfoPlist.strings */ = {
@@ -344,8 +435,13 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SPARROW_SRC}/**";
 			};
 			name = Debug;
 		};
@@ -361,9 +457,14 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SPARROW_SRC}/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -443,6 +544,7 @@
 				BB866ED9140C2F7200A188B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB866EDA140C2F7200A188B5 /* Build configuration list for PBXNativeTarget "SparrowBonesTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +553,7 @@
 				BB866EDC140C2F7200A188B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

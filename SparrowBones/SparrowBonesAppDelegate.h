@@ -12,8 +12,7 @@
 
 @interface SparrowBonesAppDelegate : NSObject <UIApplicationDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet SparrowBonesViewController *viewController;
+@property (nonatomic, retain) IBOutlet UIWindow* window;
+@property (nonatomic, retain) IBOutlet SparrowBonesViewController* viewController;
 
 @end
