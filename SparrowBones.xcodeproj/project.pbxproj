@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB866EA4140C2F7100A188B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA3140C2F7100A188B5 /* UIKit.framework */; };
+		BB866EA6140C2F7100A188B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA5140C2F7100A188B5 /* Foundation.framework */; };
+		BB866EA8140C2F7100A188B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */; };
+		BB866EAE140C2F7100A188B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB866EAC140C2F7100A188B5 /* InfoPlist.strings */; };
+		BB866EB0140C2F7100A188B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EAF140C2F7100A188B5 /* main.m */; };
+		BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */; };
+		BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB866EB5140C2F7100A188B5 /* MainWindow.xib */; };
+		BB866EBA140C2F7200A188B5 /* SparrowBonesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */; };
+		BB866EBD140C2F7200A188B5 /* SparrowBonesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */; };
+		BB866EC5140C2F7200A188B5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */; };
+		BB866EC6140C2F7200A188B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA3140C2F7100A188B5 /* UIKit.framework */; };
+		BB866EC7140C2F7200A188B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA5140C2F7100A188B5 /* Foundation.framework */; };
+		BB866EC8140C2F7200A188B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */; };
+		BB866ED0140C2F7200A188B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB866ECE140C2F7200A188B5 /* InfoPlist.strings */; };
+		BB866ED2140C2F7200A188B5 /* SparrowBonesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = BB866ED1140C2F7200A188B5 /* SparrowBonesTests.h */; };
+		BB866ED4140C2F7200A188B5 /* SparrowBonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866ED3140C2F7200A188B5 /* SparrowBonesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB866EC9140C2F7200A188B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB866E96140C2F7100A188B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB866E9E140C2F7100A188B5;
+			remoteInfo = SparrowBones;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB866E9F140C2F7100A188B5 /* SparrowBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparrowBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB866EA3140C2F7100A188B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB866EA5140C2F7100A188B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB866EAB140C2F7100A188B5 /* SparrowBones-Info.plist */ = {isa = PBXFileReference; path = "SparrowBones-Info.plist"; sourceTree = "<group>"; };
+		BB866EAD140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB866EAF140C2F7100A188B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB866EB1140C2F7100A188B5 /* SparrowBones-Prefix.pch */ = {isa = PBXFileReference; path = "SparrowBones-Prefix.pch"; sourceTree = "<group>"; };
+		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
+		BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesAppDelegate.m; sourceTree = "<group>"; };
+		BB866EB6140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
+		BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesViewController.m; sourceTree = "<group>"; };
+		BB866EBC140C2F7200A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SparrowBonesViewController.xib; sourceTree = "<group>"; };
+		BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparrowBonesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB866ECD140C2F7200A188B5 /* SparrowBonesTests-Info.plist */ = {isa = PBXFileReference; path = "SparrowBonesTests-Info.plist"; sourceTree = "<group>"; };
+		BB866ECF140C2F7200A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB866ED1140C2F7200A188B5 /* SparrowBonesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesTests.h; sourceTree = "<group>"; };
+		BB866ED3140C2F7200A188B5 /* SparrowBonesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB866E9C140C2F7100A188B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866EA4140C2F7100A188B5 /* UIKit.framework in Frameworks */,
+				BB866EA6140C2F7100A188B5 /* Foundation.framework in Frameworks */,
+				BB866EA8140C2F7100A188B5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB866EBF140C2F7200A188B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866EC5140C2F7200A188B5 /* SenTestingKit.framework in Frameworks */,
+				BB866EC6140C2F7200A188B5 /* UIKit.framework in Frameworks */,
+				BB866EC7140C2F7200A188B5 /* Foundation.framework in Frameworks */,
+				BB866EC8140C2F7200A188B5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB866E94140C2F7100A188B5 = {
+			isa = PBXGroup;
+			children = (
+				BB866EA9140C2F7100A188B5 /* SparrowBones */,
+				BB866ECB140C2F7200A188B5 /* SparrowBonesTests */,
+				BB866EA2140C2F7100A188B5 /* Frameworks */,
+				BB866EA0140C2F7100A188B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB866EA0140C2F7100A188B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB866E9F140C2F7100A188B5 /* SparrowBones.app */,
+				BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB866EA2140C2F7100A188B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EA3140C2F7100A188B5 /* UIKit.framework */,
+				BB866EA5140C2F7100A188B5 /* Foundation.framework */,
+				BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */,
+				BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB866EA9140C2F7100A188B5 /* SparrowBones */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */,
+				BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */,
+				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
+				BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */,
+				BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */,
+				BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */,
+				BB866EAA140C2F7100A188B5 /* Supporting Files */,
+			);
+			path = SparrowBones;
+			sourceTree = "<group>";
+		};
+		BB866EAA140C2F7100A188B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EAB140C2F7100A188B5 /* SparrowBones-Info.plist */,
+				BB866EAC140C2F7100A188B5 /* InfoPlist.strings */,
+				BB866EAF140C2F7100A188B5 /* main.m */,
+				BB866EB1140C2F7100A188B5 /* SparrowBones-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB866ECB140C2F7200A188B5 /* SparrowBonesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB866ED1140C2F7200A188B5 /* SparrowBonesTests.h */,
+				BB866ED3140C2F7200A188B5 /* SparrowBonesTests.m */,
+				BB866ECC140C2F7200A188B5 /* Supporting Files */,
+			);
+			path = SparrowBonesTests;
+			sourceTree = "<group>";
+		};
+		BB866ECC140C2F7200A188B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB866ECD140C2F7200A188B5 /* SparrowBonesTests-Info.plist */,
+				BB866ECE140C2F7200A188B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB866E9E140C2F7100A188B5 /* SparrowBones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB866ED7140C2F7200A188B5 /* Build configuration list for PBXNativeTarget "SparrowBones" */;
+			buildPhases = (
+				BB866E9B140C2F7100A188B5 /* Sources */,
+				BB866E9C140C2F7100A188B5 /* Frameworks */,
+				BB866E9D140C2F7100A188B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SparrowBones;
+			productName = SparrowBones;
+			productReference = BB866E9F140C2F7100A188B5 /* SparrowBones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB866EC2140C2F7200A188B5 /* SparrowBonesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB866EDA140C2F7200A188B5 /* Build configuration list for PBXNativeTarget "SparrowBonesTests" */;
+			buildPhases = (
+				BB866EBE140C2F7200A188B5 /* Sources */,
+				BB866EBF140C2F7200A188B5 /* Frameworks */,
+				BB866EC0140C2F7200A188B5 /* Resources */,
+				BB866EC1140C2F7200A188B5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB866ECA140C2F7200A188B5 /* PBXTargetDependency */,
+			);
+			name = SparrowBonesTests;
+			productName = SparrowBonesTests;
+			productReference = BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB866E96140C2F7100A188B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Noise & Heat";
+			};
+			buildConfigurationList = BB866E99140C2F7100A188B5 /* Build configuration list for PBXProject "SparrowBones" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB866E94140C2F7100A188B5;
+			productRefGroup = BB866EA0140C2F7100A188B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB866E9E140C2F7100A188B5 /* SparrowBones */,
+				BB866EC2140C2F7200A188B5 /* SparrowBonesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB866E9D140C2F7100A188B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866EAE140C2F7100A188B5 /* InfoPlist.strings in Resources */,
+				BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */,
+				BB866EBD140C2F7200A188B5 /* SparrowBonesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB866EC0140C2F7200A188B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866ED0140C2F7200A188B5 /* InfoPlist.strings in Resources */,
+				BB866ED2140C2F7200A188B5 /* SparrowBonesTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB866EC1140C2F7200A188B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB866E9B140C2F7100A188B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866EB0140C2F7100A188B5 /* main.m in Sources */,
+				BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */,
+				BB866EBA140C2F7200A188B5 /* SparrowBonesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB866EBE140C2F7200A188B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB866ED4140C2F7200A188B5 /* SparrowBonesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB866ECA140C2F7200A188B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB866E9E140C2F7100A188B5 /* SparrowBones */;
+			targetProxy = BB866EC9140C2F7200A188B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB866EAC140C2F7100A188B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB866EAD140C2F7100A188B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB866EB5140C2F7100A188B5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB866EB6140C2F7100A188B5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		BB866EBB140C2F7200A188B5 /* SparrowBonesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB866EBC140C2F7200A188B5 /* en */,
+			);
+			name = SparrowBonesViewController.xib;
+			sourceTree = "<group>";
+		};
+		BB866ECE140C2F7200A188B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB866ECF140C2F7200A188B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB866ED5140C2F7200A188B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB866ED6140C2F7200A188B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB866ED8140C2F7200A188B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
+				INFOPLIST_FILE = "SparrowBones/SparrowBones-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB866ED9140C2F7200A188B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
+				INFOPLIST_FILE = "SparrowBones/SparrowBones-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB866EDB140C2F7200A188B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SparrowBones.app/SparrowBones";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
+				INFOPLIST_FILE = "SparrowBonesTests/SparrowBonesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BB866EDC140C2F7200A188B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SparrowBones.app/SparrowBones";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
+				INFOPLIST_FILE = "SparrowBonesTests/SparrowBonesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB866E99140C2F7100A188B5 /* Build configuration list for PBXProject "SparrowBones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB866ED5140C2F7200A188B5 /* Debug */,
+				BB866ED6140C2F7200A188B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB866ED7140C2F7200A188B5 /* Build configuration list for PBXNativeTarget "SparrowBones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB866ED8140C2F7200A188B5 /* Debug */,
+				BB866ED9140C2F7200A188B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB866EDA140C2F7200A188B5 /* Build configuration list for PBXNativeTarget "SparrowBonesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB866EDB140C2F7200A188B5 /* Debug */,
+				BB866EDC140C2F7200A188B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB866E96140C2F7100A188B5 /* Project object */;
+}
