@@ -8,16 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SparrowBonesViewController : UIViewController
+@interface SparrowBonesLandscapeViewController : UIViewController
 
+/// The stage container this view controls.
 @property (nonatomic, retain, readonly) SPStage* stage;
+
+/// The stage container this view controls.
+@property (nonatomic, retain, readonly) SPView* spview;
 
 /**
  * Called to construct the initial display tree
  * on the stage. You should override this method
- * but NOT call [super initDisplayTree], otherwise
- * you'll get the hello world red quad of doom on
- * your stage.
+ * in order to display your initial scene
  */
 - (void)initDisplayTree;
 

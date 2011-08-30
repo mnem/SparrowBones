@@ -14,7 +14,7 @@
 		BB866EB0140C2F7100A188B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EAF140C2F7100A188B5 /* main.m */; };
 		BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */; };
 		BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB866EB5140C2F7100A188B5 /* MainWindow.xib */; };
-		BB866EBA140C2F7200A188B5 /* SparrowBonesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */; };
+		BB866EBA140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB866EB9140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m */; };
 		BB866EC5140C2F7200A188B5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */; };
 		BB866EC6140C2F7200A188B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA3140C2F7100A188B5 /* UIKit.framework */; };
 		BB866EC7140C2F7200A188B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA5140C2F7100A188B5 /* Foundation.framework */; };
@@ -29,6 +29,7 @@
 		BB873ECA140C3710005A6E14 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC9140C3710005A6E14 /* OpenGLES.framework */; };
 		BB873ECC140C3725005A6E14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECB140C3725005A6E14 /* QuartzCore.framework */; };
 		BB873ECE140C3739005A6E14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECD140C3739005A6E14 /* libz.dylib */; };
+		BB9061A9140D8CC000BDBD28 /* GameBoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,8 @@
 		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
 		BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesAppDelegate.m; sourceTree = "<group>"; };
 		BB866EB6140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
-		BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesViewController.m; sourceTree = "<group>"; };
+		BB866EB8140C2F7200A188B5 /* SparrowBonesLandscapeViewController.h */ = {isa = PBXFileReference; path = SparrowBonesLandscapeViewController.h; sourceTree = "<group>"; };
+		BB866EB9140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesLandscapeViewController.m; sourceTree = "<group>"; };
 		BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparrowBonesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB866ECD140C2F7200A188B5 /* SparrowBonesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SparrowBonesTests-Info.plist"; sourceTree = "<group>"; };
@@ -89,6 +90,8 @@
 		BB873EC9140C3710005A6E14 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB873ECB140C3725005A6E14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB873ECD140C3739005A6E14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BB9061A7140D8CC000BDBD28 /* GameBoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoneViewController.h; sourceTree = "<group>"; };
+		BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +175,8 @@
 		BB866EA9140C2F7100A188B5 /* SparrowBones */ = {
 			isa = PBXGroup;
 			children = (
-				BBC92D37140C4B180079158D /* App */,
-				BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */,
-				BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */,
+				BB9061A6140D8C8800BDBD28 /* Game Bone */,
+				BB9061A5140D8C6400BDBD28 /* Bone Base */,
 				BB866EAA140C2F7100A188B5 /* Supporting Files */,
 			);
 			path = SparrowBones;
@@ -218,14 +220,41 @@
 			name = Sparrow;
 			sourceTree = "<group>";
 		};
-		BBC92D37140C4B180079158D /* App */ = {
+		BB9061A4140D8B8F00BDBD28 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB866EB8140C2F7200A188B5 /* SparrowBonesLandscapeViewController.h */,
+				BB866EB9140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		BB9061A5140D8C6400BDBD28 /* Bone Base */ = {
+			isa = PBXGroup;
+			children = (
+				BBC92D37140C4B180079158D /* App Delegate */,
+				BB9061A4140D8B8F00BDBD28 /* View Controller */,
+			);
+			name = "Bone Base";
+			sourceTree = "<group>";
+		};
+		BB9061A6140D8C8800BDBD28 /* Game Bone */ = {
+			isa = PBXGroup;
+			children = (
+				BB9061A7140D8CC000BDBD28 /* GameBoneViewController.h */,
+				BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */,
+			);
+			name = "Game Bone";
+			sourceTree = "<group>";
+		};
+		BBC92D37140C4B180079158D /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */,
 				BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */,
 				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
 			);
-			name = App;
+			name = "App Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +390,8 @@
 			files = (
 				BB866EB0140C2F7100A188B5 /* main.m in Sources */,
 				BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */,
-				BB866EBA140C2F7200A188B5 /* SparrowBonesViewController.m in Sources */,
+				BB866EBA140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m in Sources */,
+				BB9061A9140D8CC000BDBD28 /* GameBoneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
