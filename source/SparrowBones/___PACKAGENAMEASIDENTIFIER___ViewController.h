@@ -6,8 +6,8 @@
 //  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "SparrowBonesLandscapeViewController.h"
+#import "SparrowBonesViewController.h"
 
-@interface ___PACKAGENAMEASIDENTIFIER___ViewController : SparrowBonesLandscapeViewController
+@interface ___PACKAGENAMEASIDENTIFIER___ViewController : SparrowBonesViewController
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "SparrowBonesLandscapeViewController.h"
+#import "SparrowBonesViewController.h"
 
 #if VIEW_ORIENTATION_LANDSCAPE && VIEW_ORIENTATION_PORTRAIT
 #error Only one of VIEW_ORIENTATION_LANDSCAPE or VIEW_ORIENTATION_PORTRAIT can be true!
@@ -16,7 +16,7 @@
 #error You must set one of VIEW_ORIENTATION_LANDSCAPE or VIEW_ORIENTATION_PORTRAIT to true!
 #endif
 
-@implementation SparrowBonesLandscapeViewController
+@implementation SparrowBonesViewController
 
 #pragma mark - Properties
 
@@ -41,7 +41,7 @@
 
 #pragma mark - View lifecycle
 
-- (CGRect)getLandscapeScreenBounds
+- (CGRect)getScreenBounds
 {
     CGRect screenFrame = [UIScreen mainScreen].applicationFrame;
 
@@ -73,7 +73,7 @@
     SP_CREATE_POOL(pool);
 
     // Create the root view
-    CGRect screenFrame = [self getLandscapeScreenBounds];
+    CGRect screenFrame = [self getScreenBounds];
     SPView* rootView = [[SPView alloc] initWithFrame:screenFrame];
 
     rootView.contentMode = UIViewContentModeTopLeft;

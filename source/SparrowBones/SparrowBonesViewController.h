@@ -18,6 +18,8 @@
  * if you want me to support it as a configurable setting per view controller
  * instance rather than per application)
  *
+ *    https://github.com/mnem/SparrowBones/issues
+ *
  * TL;DR - only set one of these to true.
  */
 #define VIEW_ORIENTATION_LANDSCAPE true
@@ -25,7 +27,7 @@
 
 
 
-@interface SparrowBonesLandscapeViewController : UIViewController
+@interface SparrowBonesViewController : UIViewController
 
 /// The stage container this view controls.
 @property (nonatomic, retain, readonly) SPStage* stage;
