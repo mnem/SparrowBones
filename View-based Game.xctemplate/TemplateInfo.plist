@@ -7,19 +7,51 @@
 		<string>com.apple.dt.unit.viewBasedApplication</string>
 		<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
 	</array>
-	<key>Concrete</key>
-	<true/>
-	<key>Definitions</key>
-	<dict>
-	</dict>
-	<key>Description</key>
-	<string>This template provides a starting point for a Sparrow-Framework game that uses a single view. It provides a view controller to manage the view, and it is initially set up to allow Landscape orientation only.</string>
 	<key>Identifier</key>
 	<string>com.noiseandheat.ios.xcodetemplates.viewBasedGame</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Description</key>
+	<string>This template provides a starting point for a Sparrow-Framework game that uses a single view. It provides a view controller to manage the view, and it is initially set up to allow Landscape orientation only.</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___ViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>../source/SparrowBones/___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___ViewController.m</key>
+		<dict>
+			<key>Path</key>
+			<string>../source/SparrowBones/___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
+		</dict>
+		<key>Bone Yard/SparrowBonesLandscapeViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Bone Yard</string>
+			<key>Path</key>
+			<string>../source/SparrowBones/SparrowBonesLandscapeViewController.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Bone Yard/SparrowBonesLandscapeViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Bone Yard</string>
+			<key>Path</key>
+			<string>../source/SparrowBones/SparrowBonesLandscapeViewController.m</string>
+		</dict>
+	</dict>
 	<key>Nodes</key>
 	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
+		<string>Bone Yard/SparrowBonesLandscapeViewController.m</string>
+		<string>Bone Yard/SparrowBonesLandscapeViewController.h</string>
 	</array>
 	<key>Options</key>
 	<array>
