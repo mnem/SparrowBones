@@ -75,7 +75,7 @@
 		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
 		BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesAppDelegate.m; sourceTree = "<group>"; };
 		BB866EB6140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		BB866EB8140C2F7200A188B5 /* SparrowBonesLandscapeViewController.h */ = {isa = PBXFileReference; path = SparrowBonesLandscapeViewController.h; sourceTree = "<group>"; };
+		BB866EB8140C2F7200A188B5 /* SparrowBonesLandscapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesLandscapeViewController.h; sourceTree = "<group>"; };
 		BB866EB9140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesLandscapeViewController.m; sourceTree = "<group>"; };
 		BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparrowBonesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
