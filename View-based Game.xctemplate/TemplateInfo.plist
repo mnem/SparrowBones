@@ -29,29 +29,29 @@
 			<key>Path</key>
 			<string>../source/SparrowBones/___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
 		</dict>
-		<key>Bone Yard/SparrowBonesLandscapeViewController.h</key>
+		<key>Bone Yard/SparrowBonesViewController.h</key>
 		<dict>
 			<key>Group</key>
 			<string>Bone Yard</string>
 			<key>Path</key>
-			<string>../source/SparrowBones/SparrowBonesLandscapeViewController.h</string>
+			<string>../source/SparrowBones/SparrowBonesViewController.h</string>
 			<key>TargetIndices</key>
 			<array />
 		</dict>
-		<key>Bone Yard/SparrowBonesLandscapeViewController.m</key>
+		<key>Bone Yard/SparrowBonesViewController.m</key>
 		<dict>
 			<key>Group</key>
 			<string>Bone Yard</string>
 			<key>Path</key>
-			<string>../source/SparrowBones/SparrowBonesLandscapeViewController.m</string>
+			<string>../source/SparrowBones/SparrowBonesViewController.m</string>
 		</dict>
 	</dict>
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
-		<string>Bone Yard/SparrowBonesLandscapeViewController.m</string>
-		<string>Bone Yard/SparrowBonesLandscapeViewController.h</string>
+		<string>Bone Yard/SparrowBonesViewController.m</string>
+		<string>Bone Yard/SparrowBonesViewController.h</string>
 	</array>
 	<key>Options</key>
 	<array>
