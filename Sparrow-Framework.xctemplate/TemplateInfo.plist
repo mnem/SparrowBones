@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Sparrow/Sparrow.xcodeproj</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow</string>
+			<key>Path</key>
+			<string>Sparrow.xcodeproj</string>
+			<key>PathType</key>
+			<string>Absolute</string>
+		</dict>
+		<key>Sparrow/README.txt</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow</string>
+			<key>Path</key>
+			<string>README.txt</string>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Sparrow/Sparrow.xcodeproj</string>
+		<string>Sparrow/README.txt</string>
+	</array>
+	<key>Options</key>
+	<array>
+	</array>
+</dict>
+</plist>

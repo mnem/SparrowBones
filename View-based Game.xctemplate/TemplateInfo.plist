@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.viewBasedApplication</string>
+		<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for a Sparrow-Framework game that uses a single view. It provides a view controller to manage the view, and it is initially set up to allow Landscape orientation only.</string>
+	<key>Identifier</key>
+	<string>com.noiseandheat.ios.xcodetemplates.viewBasedGame</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+	</array>
+	<key>Options</key>
+	<array>
+	</array>
+</dict>
+</plist>
