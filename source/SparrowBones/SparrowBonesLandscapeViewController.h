@@ -1,12 +1,29 @@
 //
-//  SparrowBonesViewController.h
-//  SparrowBones
+//  ___FILENAME___
+//  ___PACKAGENAME___
 //
-//  Created by David Wagner on 29/08/2011.
-//  Copyright 2011 Noise & Heat. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+/**
+ * At the moment SparrowBones only supports Landscape xor Portrait 
+ * orientations - it doesn't support both simultaneously. This is
+ * because moving from landscape -> portrait (or vice versa) would
+ * require re-creating the view and the OpenGLES surfaces, which is slow.
+ *
+ * Stick in a issue at github if you want me to start supporting this (or
+ * if you want me to support it as a configurable setting per view controller
+ * instance rather than per application)
+ *
+ * TL;DR - only set one of these to true.
+ */
+#define VIEW_ORIENTATION_LANDSCAPE true
+#define VIEW_ORIENTATION_PORTRAIT false
+
+
 
 @interface SparrowBonesLandscapeViewController : UIViewController
 

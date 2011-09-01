@@ -1,9 +1,9 @@
 //
-//  SparrowBonesAppDelegate.m
-//  SparrowBones
+//  ___FILENAME___
+//  ___PACKAGENAME___
 //
-//  Created by David Wagner on 29/08/2011.
-//  Copyright 2011 Noise & Heat. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "SparrowBonesAppDelegate.h"

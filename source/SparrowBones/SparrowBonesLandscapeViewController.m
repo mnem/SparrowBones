@@ -1,12 +1,20 @@
 //
-//  SparrowBonesViewController.m
-//  SparrowBones
+//  ___FILENAME___
+//  ___PACKAGENAME___
 //
-//  Created by David Wagner on 29/08/2011.
-//  Copyright 2011 Noise & Heat. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "SparrowBonesLandscapeViewController.h"
+
+#if VIEW_ORIENTATION_LANDSCAPE && VIEW_ORIENTATION_PORTRAIT
+#error Only one of VIEW_ORIENTATION_LANDSCAPE or VIEW_ORIENTATION_PORTRAIT can be true!
+#endif
+
+#if !VIEW_ORIENTATION_LANDSCAPE && !VIEW_ORIENTATION_PORTRAIT
+#error You must set one of VIEW_ORIENTATION_LANDSCAPE or VIEW_ORIENTATION_PORTRAIT to true!
+#endif
 
 @implementation SparrowBonesLandscapeViewController
 
@@ -36,6 +44,8 @@
 - (CGRect)getLandscapeScreenBounds
 {
     CGRect screenFrame = [UIScreen mainScreen].applicationFrame;
+
+#if VIEW_ORIENTATION_LANDSCAPE
     if(screenFrame.size.width < screenFrame.size.height)
     {
         // Force landscape
@@ -43,6 +53,17 @@
         screenFrame.size.width = screenFrame.size.height;
         screenFrame.size.height = oldWidth;
     }
+#endif // VIEW_ORIENTATION_LANDSCAPE
+
+#if VIEW_ORIENTATION_PORTRAIT
+    if(screenFrame.size.width > screenFrame.size.height)
+    {
+        // Force portrait
+        float oldWidth = screenFrame.size.width;
+        screenFrame.size.width = screenFrame.size.height;
+        screenFrame.size.height = oldWidth;
+    }
+#endif // VIEW_ORIENTATION_PORTRAIT
     
     return screenFrame;
 }
@@ -76,7 +97,13 @@
     // Create the stage
     [SPStage setSupportHighResolutions:YES];
     
+#if VIEW_ORIENTATION_LANDSCAPE
     _stage = [[SPStage alloc] initWithWidth:480 height:320];        
+#endif // VIEW_ORIENTATION_LANDSCAPE
+    
+#if VIEW_ORIENTATION_PORTRAIT
+    _stage = [[SPStage alloc] initWithWidth:320 height:480];        
+#endif // VIEW_ORIENTATION_PORTRAIT
         
     self.spview.stage = _stage;
     self.spview.multipleTouchEnabled = NO;
@@ -130,8 +157,13 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
+#if VIEW_ORIENTATION_LANDSCAPE
     return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+#endif // VIEW_ORIENTATION_LANDSCAPE
+    
+#if VIEW_ORIENTATION_PORTRAIT
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+#endif // VIEW_ORIENTATION_PORTRAIT
 }
 
 #pragma mark - Main functions to override for Sparrow use

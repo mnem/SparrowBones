@@ -29,7 +29,7 @@
 		BB873ECA140C3710005A6E14 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873EC9140C3710005A6E14 /* OpenGLES.framework */; };
 		BB873ECC140C3725005A6E14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECB140C3725005A6E14 /* QuartzCore.framework */; };
 		BB873ECE140C3739005A6E14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB873ECD140C3739005A6E14 /* libz.dylib */; };
-		BB9061A9140D8CC000BDBD28 /* GameBoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */; };
+		BB9061A9140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9061A8140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +90,8 @@
 		BB873EC9140C3710005A6E14 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB873ECB140C3725005A6E14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB873ECD140C3739005A6E14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		BB9061A7140D8CC000BDBD28 /* GameBoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoneViewController.h; sourceTree = "<group>"; };
-		BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoneViewController.m; sourceTree = "<group>"; };
+		BB9061A7140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "___PACKAGENAMEASIDENTIFIER___ViewController.h"; sourceTree = "<group>"; };
+		BB9061A8140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +241,8 @@
 		BB9061A6140D8C8800BDBD28 /* Game Bone */ = {
 			isa = PBXGroup;
 			children = (
-				BB9061A7140D8CC000BDBD28 /* GameBoneViewController.h */,
-				BB9061A8140D8CC000BDBD28 /* GameBoneViewController.m */,
+				BB9061A7140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */,
+				BB9061A8140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */,
 			);
 			name = "Game Bone";
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 				BB866EB0140C2F7100A188B5 /* main.m in Sources */,
 				BB866EB4140C2F7100A188B5 /* SparrowBonesAppDelegate.m in Sources */,
 				BB866EBA140C2F7200A188B5 /* SparrowBonesLandscapeViewController.m in Sources */,
-				BB9061A9140D8CC000BDBD28 /* GameBoneViewController.m in Sources */,
+				BB9061A9140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

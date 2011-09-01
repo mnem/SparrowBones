@@ -1,14 +1,14 @@
 //
-//  GameBoneViewController.m
-//  SparrowBones
+//  ___FILENAME___
+//  ___PACKAGENAME___
 //
-//  Created by David Wagner on 30/08/2011.
-//  Copyright 2011 Noise & Heat. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "GameBoneViewController.h"
+#import "___PACKAGENAMEASIDENTIFIER___ViewController.h"
 
-@implementation GameBoneViewController
+@implementation ___PACKAGENAMEASIDENTIFIER___ViewController
 
 #pragma mark - Main entrypoints
 
@@ -19,6 +19,8 @@
     SPQuad* bottomRight = [SPQuad quadWithWidth:10 height:10 color:0x0000ff];
     SPQuad* bottomLeft = [SPQuad quadWithWidth:10 height:10 color:0xff00ff];
     SPQuad* center = [SPQuad quadWithWidth:100 height:100 color:0xffffff];
+    SPTextField* top = [SPTextField textFieldWithWidth:100 height:14 text:@"Top" fontName:@"Helvetica" fontSize:14 color:0xffffff];
+    SPTextField* bottom = [SPTextField textFieldWithWidth:100 height:14 text:@"Bottom" fontName:@"Helvetica" fontSize:14 color:0xffffff];
     
     topLeft.x = 0;
     topLeft.y = 0;
@@ -34,13 +36,21 @@
 
     center.x = (self.stage.width - center.width) / 2.0f;
     center.y = (self.stage.height - center.height) / 2.0f;
+    
+    top.x = (self.stage.width - top.width) / 2.0f;
+    top.y = 0;
+    
+    bottom.x = (self.stage.width - bottom.width) / 2.0f;
+    bottom.y = self.stage.height - bottom.height;
 
     // self.stage refers to the main stage container for this view.
     [self.stage addChild:topLeft];    
     [self.stage addChild:topRight];    
     [self.stage addChild:bottomLeft];    
     [self.stage addChild:bottomRight];    
-    [self.stage addChild:center];    
+    [self.stage addChild:center];
+    [self.stage addChild:top];
+    [self.stage addChild:bottom];
 }
 
 
