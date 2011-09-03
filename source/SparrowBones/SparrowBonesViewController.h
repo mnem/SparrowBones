@@ -26,7 +26,6 @@
 #define VIEW_ORIENTATION_PORTRAIT false
 
 
-
 @interface SparrowBonesViewController : UIViewController
 
 /// The stage container this view controls.

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2C0CF1141279F0000026CF /* MainWindowiPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C0CEE141279F0000026CF /* MainWindowiPhone.xib */; };
+		BB2C0CF314127B4B000026CF /* MainWindowiPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C0CF214127B4B000026CF /* MainWindowiPad.xib */; };
 		BB866EA4140C2F7100A188B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA3140C2F7100A188B5 /* UIKit.framework */; };
 		BB866EA6140C2F7100A188B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA5140C2F7100A188B5 /* Foundation.framework */; };
 		BB866EA8140C2F7100A188B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB866EA7140C2F7100A188B5 /* CoreGraphics.framework */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB2C0CEF141279F0000026CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindowiPhone.xib; sourceTree = "<group>"; };
+		BB2C0CF214127B4B000026CF /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPad.xib; sourceTree = "<group>"; };
 		BB866E9F140C2F7100A188B5 /* SparrowBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparrowBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EA3140C2F7100A188B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB866EA5140C2F7100A188B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,7 +79,7 @@
 		BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesAppDelegate.h; sourceTree = "<group>"; };
 		BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesAppDelegate.m; sourceTree = "<group>"; };
 		BB866EB6140C2F7100A188B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
+		BB866EB8140C2F7200A188B5 /* SparrowBonesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparrowBonesViewController.h; sourceTree = "<group>"; };
 		BB866EB9140C2F7200A188B5 /* SparrowBonesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparrowBonesViewController.m; sourceTree = "<group>"; };
 		BB866EC3140C2F7200A188B5 /* SparrowBonesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparrowBonesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EC4140C2F7200A188B5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -90,7 +94,7 @@
 		BB873EC9140C3710005A6E14 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB873ECB140C3725005A6E14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB873ECD140C3739005A6E14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		BB9061A7140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "___PACKAGENAMEASIDENTIFIER___ViewController.h"; sourceTree = "<group>"; };
+		BB9061A7140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PACKAGENAMEASIDENTIFIER___ViewController.h"; sourceTree = "<group>"; };
 		BB9061A8140D8CC000BDBD28 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,9 +254,11 @@
 		BBC92D37140C4B180079158D /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				BB2C0CF214127B4B000026CF /* MainWindowiPad.xib */,
+				BB2C0CEE141279F0000026CF /* MainWindowiPhone.xib */,
+				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
 				BB866EB2140C2F7100A188B5 /* SparrowBonesAppDelegate.h */,
 				BB866EB3140C2F7100A188B5 /* SparrowBonesAppDelegate.m */,
-				BB866EB5140C2F7100A188B5 /* MainWindow.xib */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -353,6 +359,8 @@
 			files = (
 				BB866EAE140C2F7100A188B5 /* InfoPlist.strings in Resources */,
 				BB866EB7140C2F7100A188B5 /* MainWindow.xib in Resources */,
+				BB2C0CF1141279F0000026CF /* MainWindowiPhone.xib in Resources */,
+				BB2C0CF314127B4B000026CF /* MainWindowiPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BB2C0CEE141279F0000026CF /* MainWindowiPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2C0CEF141279F0000026CF /* en */,
+			);
+			name = MainWindowiPhone.xib;
+			sourceTree = "<group>";
+		};
 		BB866EAC140C2F7100A188B5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,7 +521,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
 				INFOPLIST_FILE = "SparrowBones/SparrowBones-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -516,7 +534,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SparrowBones/SparrowBones-Prefix.pch";
 				INFOPLIST_FILE = "SparrowBones/SparrowBones-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

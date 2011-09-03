@@ -56,6 +56,7 @@
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -125,11 +126,13 @@
 						<int key="objectID">10</int>
 						<reference key="object" ref="943309135"/>
 						<reference key="parent" ref="0"/>
+						<string key="objectName">SparrowBones View Controller</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
 						<reference key="object" ref="117978783"/>
 						<reference key="parent" ref="0"/>
+						<string key="objectName">SparrowBones Main Window</string>
 					</object>
 				</object>
 			</object>

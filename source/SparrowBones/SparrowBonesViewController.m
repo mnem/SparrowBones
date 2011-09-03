@@ -16,6 +16,19 @@
 #error You must set one of VIEW_ORIENTATION_LANDSCAPE or VIEW_ORIENTATION_PORTRAIT to true!
 #endif
 
+
+// Some contants used to create the stage. As the stage
+// size is described in points (as pixels vary depending on
+// whether or not a device has a 'Retina Display'), we can
+// use these regardless. All we need to know is whether
+// we're setting up an iPhone sized stage, or an iPad one.
+
+#define SHORT_EDGE_POINTS_IPHONE (320)
+#define LONG_EDGE_POINTS_IPHONE (480)
+
+#define SHORT_EDGE_POINTS_IPAD (768)
+#define LONG_EDGE_POINTS_IPAD (1024)
+
 @implementation SparrowBonesViewController
 
 #pragma mark - Properties
@@ -96,13 +109,22 @@
     
     // Create the stage
     [SPStage setSupportHighResolutions:YES];
+
+    float longEdge = LONG_EDGE_POINTS_IPHONE;
+    float shortEdge = SHORT_EDGE_POINTS_IPHONE;
     
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        longEdge = LONG_EDGE_POINTS_IPAD;
+        shortEdge = SHORT_EDGE_POINTS_IPAD;
+    }
+
 #if VIEW_ORIENTATION_LANDSCAPE
-    _stage = [[SPStage alloc] initWithWidth:480 height:320];        
+    _stage = [[SPStage alloc] initWithWidth:longEdge height:shortEdge];        
 #endif // VIEW_ORIENTATION_LANDSCAPE
     
 #if VIEW_ORIENTATION_PORTRAIT
-    _stage = [[SPStage alloc] initWithWidth:320 height:480];        
+    _stage = [[SPStage alloc] initWithWidth:shortEdge height:longEdge];        
 #endif // VIEW_ORIENTATION_PORTRAIT
         
     self.spview.stage = _stage;
