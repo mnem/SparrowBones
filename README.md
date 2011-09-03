@@ -7,7 +7,7 @@ games on iPhone.
 Installation
 ============
 
-Clone this repository to you Xcode 4 user templates folder. You may
+Clone this repository to your Xcode 4 user templates folder. You may
 have to create the folder first. These lines should do the trick:
 
     mkdir -p ~/Library/Developer/Xcode/Templates
@@ -27,7 +27,7 @@ the link to Sparrow.xcodeproj will appear in RED. To fix this, follow the
 instructions in the README.txt file in the Sparrow group.
 
 Once you've done that, dive right in. Generally the place to start is in
-`Game/<your game name>ViewController`. Follow the comments and you should
+`<your game name>/<your game name>ViewController.m`. Follow the comments and you should
 be sorted.
 
 
