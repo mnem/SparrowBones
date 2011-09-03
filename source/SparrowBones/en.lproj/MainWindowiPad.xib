@@ -53,13 +53,10 @@
 				<bool key="IBUIHorizontal">NO</bool>
 			</object>
 			<object class="IBUIWindow" id="380026005">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">1316</int>
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrameSize">{768, 1024}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -129,7 +126,7 @@
 						<int key="objectID">3</int>
 						<reference key="object" ref="471885662"/>
 						<reference key="parent" ref="0"/>
-						<string key="objectName">SparrowBones App Delgate</string>
+						<string key="objectName">___PACKAGENAMEASIDENTIFIER___ App Delgate</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
