@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Identifier</key>
+	<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Ancestors</key>
 	<array>
 	</array>
@@ -15,6 +19,8 @@
 			<string>Sparrow.xcodeproj</string>
 			<key>PathType</key>
 			<string>Absolute</string>
+			<key>TargetIndices</key>
+			<array />
 		</dict>
 		<key>Sparrow/README.txt</key>
 		<dict>
@@ -22,15 +28,13 @@
 			<string>Sparrow</string>
 			<key>Path</key>
 			<string>README.txt</string>
+			<key>TargetIndices</key>
+			<array />
 		</dict>
 		<key>*:*:importSparrow</key>
 		<string>#import "Sparrow.h"
 </string>
 	</dict>
-	<key>Identifier</key>
-	<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
-	<key>Kind</key>
-	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
 		<string>Sparrow/Sparrow.xcodeproj</string>

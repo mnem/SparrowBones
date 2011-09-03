@@ -126,5 +126,35 @@
 			</dict>
 		</dict>
 	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+<!-- Once I've worked out how to correctly add Sparrow as a linked project,
+     this should add it as a dependency target.
+			<key>Dependencies</key>
+			<array>
+				<string>Sparrow</string>
+			</array>
+			<key>ProductDependencies</key>
+			<array>
+				<string>Sparrow</string>
+			</array>
+-->
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>KEYWORDS="TODO:|FIXME:|\?\?\?:|\!\!\!:"
+find ${SRCROOT} \( -name "*.h" -or -name "*.m" \) -print0 | \
+xargs -0 egrep --with-filename --line-number --only-matching "($KEYWORDS).*\$" | \
+perl -p -e "s/($KEYWORDS)/ warning: \$1/"</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

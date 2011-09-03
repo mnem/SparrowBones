@@ -11,14 +11,22 @@ SPARROW_SRC variable. And you do have one of those, don't you?[*]
 THE FIX
 =======
 
-1. Select "Sparrow.xcodeproj"
-2. Select menu: View -> Utilities -> Show File Inspector (alt-cmd-1)
-3. Set Location in the inspector to SPARROW_SRC (or whatever you called it)
-4. ???
-5. Profit
+To add Sparrow:
 
-Unfortunately, you will have to do this everytime you create a new project,
-sorry. Hopefully I'll work out how to fix it at some point.
+1. Select "Sparrow.xcodeproj".
+2. Select menu: View -> Utilities -> Show File Inspector (alt-cmd-1).
+3. Set Location in the inspector to SPARROW_SRC (or whatever you called it).
+
+To make sure Sparrow builds:
+
+1. Select your project.
+2. Select your project target (not the Tests one, if you added unit tests).
+3. Select the "Build Phases" tab.
+4. Expand "Target Dependencies" and click the + button to add one.
+5. Add Sparrow->Sparrow.
+
+Unfortunately, you will have to do this everytime you create a new project.
+Hopefully I'll work out how to fix it at some point.
 
 
 
