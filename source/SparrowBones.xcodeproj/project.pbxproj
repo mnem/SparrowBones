@@ -67,7 +67,7 @@
 
 /* Begin PBXFileReference section */
 		BB2C0CEF141279F0000026CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindowiPhone.xib; sourceTree = "<group>"; };
-		BB2C0CF214127B4B000026CF /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPad.xib; sourceTree = "<group>"; };
+		BB2C0CF214127B4B000026CF /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindowiPad.xib; path = en.lproj/MainWindowiPad.xib; sourceTree = "<group>"; };
 		BB866E9F140C2F7100A188B5 /* SparrowBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparrowBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB866EA3140C2F7100A188B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB866EA5140C2F7100A188B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
