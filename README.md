@@ -22,14 +22,21 @@ category to choose templates from called SparrowBones.
 Using The Template
 ==================
 
-The templates always require you to perform a one time bit of configuration
-when you create a new project unfortunately. When you create a new project
+There are 2 templates provided:
+
+- **Game with Sparrow source copied**. Use this if you want the easiest way
+to start a new project. After the wizard you can dive right in. It copies
+a version of Sparrow-Framework into the project directory (currently
+SHA: 6d7112975f48efc65f8afce69ccf82d301f9b7a3 ).
+
+-- **Game with Sparrow source linked**.  This template requires you to
+perform some minor post creation configuration. When you create a new project
 the link to Sparrow.xcodeproj will appear in RED. To fix this, follow the
 instructions in the README.txt file in the Sparrow group.
 
-Once you've done that, dive right in. Generally the place to start is in
-`<your game name>/<your game name>ViewController.m`. Follow the comments and you should
-be sorted.
+Once you've chosen, dive right in. Generally the place to start is in
+`<your game name>/<your game name>ViewController.m`. Follow the comments and
+you should be sorted.
 
 
 mnem
