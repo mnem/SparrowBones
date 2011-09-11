@@ -39,6 +39,19 @@ Once you've chosen, dive right in. Generally the place to start is in
 `<your game name>/<your game name>ViewController.m`. Follow the comments and
 you should be sorted.
 
+Updating The Template
+=====================
+
+Updating the templates code is easy. It's just a git repository, so this
+should work:
+
+    cd ~/Library/Developer/Xcode/Templates/SparrowBones
+    git pull origin master
+    git submodule update --init
+
+NOTE: This only affects newly created projects. There's no easy way to
+update all your existing projects.
+
 
 mnem
 
