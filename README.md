@@ -28,9 +28,9 @@ There are 2 templates provided:
 - **Game with Sparrow source copied**. Use this if you want the easiest way
 to start a new project. After the wizard you can dive right in. It copies
 a version of Sparrow-Framework into the project directory (currently
-SHA: 6d7112975f48efc65f8afce69ccf82d301f9b7a3 ).
+PrimaryFeather/Sparrow-Framework@6d7112975f48efc65f8afce69ccf82d301f9b7a3).
 
--- **Game with Sparrow source linked**.  This template requires you to
+- **Game with Sparrow source linked**.  This template requires you to
 perform some minor post creation configuration. When you create a new project
 the link to Sparrow.xcodeproj will appear in RED. To fix this, follow the
 instructions in the README.txt file in the Sparrow group.
