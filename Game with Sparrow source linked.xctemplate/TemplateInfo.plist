@@ -9,7 +9,7 @@
 		<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.noiseandheat.ios.xcodetemplates.viewBasedGame</string>
+	<string>com.noiseandheat.ios.xcodetemplates.viewBasedGameSparrowSourceLinked</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Description</key>

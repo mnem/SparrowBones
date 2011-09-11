@@ -13,6 +13,7 @@ have to create the folder first. These lines should do the trick:
     mkdir -p ~/Library/Developer/Xcode/Templates
     cd ~/Library/Developer/Xcode/Templates
     git clone git://github.com/mnem/SparrowBones.git
+    git submodule update --init
 
 This should leave you with a folder called SparrowBones in your Xcode
 templates folder. Next time you create a new project you will have a new
