@@ -27,8 +27,8 @@ There are 2 templates provided:
 
 - **Game with Sparrow source copied**. Use this if you want the easiest way
 to start a new project. After the wizard you can dive right in. It copies
-a version of Sparrow-Framework into the project directory (currently
-PrimaryFeather/Sparrow-Framework@6d7112975f48efc65f8afce69ccf82d301f9b7a3).
+a version of Sparrow-Framework into the project directory (SHA:
+6d7112975f48efc65f8afce69ccf82d301f9b7a3).
 
 - **Game with Sparrow source linked**.  This template requires you to
 perform some minor post creation configuration. When you create a new project
