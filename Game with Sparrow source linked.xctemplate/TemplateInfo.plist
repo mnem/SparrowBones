@@ -13,7 +13,7 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Description</key>
-	<string>This template provides a starting point for a Sparrow-Framework game that uses a single view. It provides a view controller to manage the view, and it is initially set up to allow Landscape orientation only.</string>
+	<string>A starting point for a Sparrow-Framework game. It provides a view controller to manage the view and is set initially for Landscape. This can be modified in 'SparrowBonesViewController.h'. Sparrow-Framework is linked to using SPARROW_SRC, but requires minor post-creation setup.</string>
 	<key>Concrete</key>
 	<true/>
 	<key>Definitions</key>
