@@ -5,6 +5,7 @@
 	<key>Ancestors</key>
 	<array>
 		<string>com.apple.dt.unit.cocoaTouchFamiliedApplication</string>
+		<string>com.noiseandheat.ios.xcodetemplates.sparrowFrameworkLinkedSource</string>
 		<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
 	</array>
 	<key>Identifier</key>

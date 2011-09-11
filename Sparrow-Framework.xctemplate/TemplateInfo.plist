@@ -11,51 +11,23 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Sparrow/Sparrow.xcodeproj</key>
-		<dict>
-			<key>Group</key>
-			<string>Sparrow</string>
-			<key>Path</key>
-			<string>Sparrow.xcodeproj</string>
-			<key>PathType</key>
-			<string>Absolute</string>
-			<key>TargetIndices</key>
-			<array />
-		</dict>
-		<key>Sparrow/README.txt</key>
-		<dict>
-			<key>Group</key>
-			<string>Sparrow</string>
-			<key>Path</key>
-			<string>README.txt</string>
-			<key>TargetIndices</key>
-			<array />
-		</dict>
 		<key>*:*:importSparrow</key>
 		<string>#import "Sparrow.h"
 </string>
 	</dict>
 	<key>Nodes</key>
 	<array>
-		<string>Sparrow/Sparrow.xcodeproj</string>
-		<string>Sparrow/README.txt</string>
 		<string>___PACKAGENAME___-Prefix.pch:objC:importSparrow</string>
-	</array>
-	<key>Options</key>
-	<array>
 	</array>
 	<key>Project</key>
 	<dict>
 		<key>SharedSettings</key>
 		<dict>
-			<key>USER_HEADER_SEARCH_PATHS</key>
-			<string>${SPARROW_SRC}/**</string>
 			<key>OTHER_LDFLAGS</key>
 			<array>
 				<string>-ObjC</string>
 				<string>-all_load</string>
 				<string>-lz</string>
-				<string>$(BUILT_PRODUCTS_DIR)/libSparrow.a</string>
 			</array>
 		</dict>
 	</dict>
@@ -70,9 +42,6 @@
 				<string>OpenGLES</string>
 				<string>QuartzCore</string>
 			</array>
-			<key>SharedSettings</key>
-			<dict>
-			</dict>
 		</dict>
 	</array>
 </dict>
