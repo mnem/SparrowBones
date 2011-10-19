@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.noiseandheat.ios.xcodetemplates.sparrowFrameworkSource</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Sparrow-Framework source/SPALSound.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPALSound.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPALSound.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPALSound.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPALSoundChannel.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPALSoundChannel.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPALSoundChannel.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPALSoundChannel.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPAnimatable.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAnimatable.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/Sparrow.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/Sparrow.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPAudioEngine.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAudioEngine.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPAudioEngine.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAudioEngine.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPAVSound.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAVSound.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPAVSound.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAVSound.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPAVSoundChannel.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAVSoundChannel.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPAVSoundChannel.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPAVSoundChannel.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPBitmapChar.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPBitmapChar.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPBitmapChar.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPBitmapChar.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPBitmapFont.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPBitmapFont.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPBitmapFont.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPBitmapFont.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPButton.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPButton.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPButton.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPButton.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPCompiledSprite.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPCompiledSprite.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPCompiledSprite.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPCompiledSprite.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPDelayedInvocation.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDelayedInvocation.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPDelayedInvocation.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDelayedInvocation.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPDisplayObject.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDisplayObject.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPDisplayObject.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDisplayObject.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPDisplayObject_Internal.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDisplayObject_Internal.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPDisplayObjectContainer.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDisplayObjectContainer.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPDisplayObjectContainer.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPDisplayObjectContainer.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPEnterFrameEvent.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEnterFrameEvent.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPEnterFrameEvent.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEnterFrameEvent.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPEvent.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEvent.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPEvent.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEvent.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPEvent_Internal.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEvent_Internal.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPEventDispatcher.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEventDispatcher.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPEventDispatcher.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPEventDispatcher.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPGLTexture.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPGLTexture.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPGLTexture.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPGLTexture.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPImage.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPImage.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPImage.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPImage.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPJuggler.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPJuggler.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPJuggler.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPJuggler.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPMacros.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPMacros.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPMatrix.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPMatrix.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPMatrix.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPMatrix.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPMovieClip.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPMovieClip.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPMovieClip.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPMovieClip.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPNSExtensions.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPNSExtensions.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPNSExtensions.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPNSExtensions.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPPoint.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPPoint.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPPoint.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPPoint.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPPoolObject.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPPoolObject.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPPoolObject.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPPoolObject.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPQuad.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPQuad.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPQuad.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPQuad.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPRectangle.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRectangle.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPRectangle.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRectangle.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPRendering.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRendering.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPRenderSupport.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRenderSupport.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPRenderSupport.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRenderSupport.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPRenderTexture.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRenderTexture.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPRenderTexture.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPRenderTexture.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPSound.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSound.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPSound.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSound.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPSoundChannel.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSoundChannel.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPSoundChannel.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSoundChannel.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPSprite.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSprite.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPSprite.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSprite.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPStage.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPStage.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPStage.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPStage.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPStage_Internal.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPStage_Internal.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPSubTexture.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSubTexture.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPSubTexture.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPSubTexture.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTextField.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTextField.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTextField.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTextField.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTexture.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTexture.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTexture.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTexture.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTextureAtlas.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTextureAtlas.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTextureAtlas.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTextureAtlas.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTouch.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouch.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTouch.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouch.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTouch_Internal.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouch_Internal.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTouchEvent.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouchEvent.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTouchEvent.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouchEvent.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTouchProcessor.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouchProcessor.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTouchProcessor.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTouchProcessor.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTransitions.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTransitions.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTransitions.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTransitions.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTween.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTween.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTween.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTween.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPTweenedProperty.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTweenedProperty.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPTweenedProperty.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPTweenedProperty.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPUtils.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPUtils.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPUtils.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPUtils.m</string>
+		</dict>
+		<key>Sparrow-Framework source/SPView.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPView.h</string>
+			<key>TargetIndices</key>
+			<array />
+		</dict>
+		<key>Sparrow-Framework source/SPView.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Sparrow-Framework source</string>
+			<key>Path</key>
+			<string>../source/Sparrow-Framework/sparrow/src/Classes/SPView.m</string>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>Sparrow-Framework source/SPALSound.h</string>
+		<string>Sparrow-Framework source/SPALSound.m</string>
+		<string>Sparrow-Framework source/SPALSoundChannel.h</string>
+		<string>Sparrow-Framework source/SPALSoundChannel.m</string>
+		<string>Sparrow-Framework source/SPAnimatable.h</string>
+		<string>Sparrow-Framework source/Sparrow.h</string>
+		<string>Sparrow-Framework source/SPAudioEngine.h</string>
+		<string>Sparrow-Framework source/SPAudioEngine.m</string>
+		<string>Sparrow-Framework source/SPAVSound.h</string>
+		<string>Sparrow-Framework source/SPAVSound.m</string>
+		<string>Sparrow-Framework source/SPAVSoundChannel.h</string>
+		<string>Sparrow-Framework source/SPAVSoundChannel.m</string>
+		<string>Sparrow-Framework source/SPBitmapChar.h</string>
+		<string>Sparrow-Framework source/SPBitmapChar.m</string>
+		<string>Sparrow-Framework source/SPBitmapFont.h</string>
+		<string>Sparrow-Framework source/SPBitmapFont.m</string>
+		<string>Sparrow-Framework source/SPButton.h</string>
+		<string>Sparrow-Framework source/SPButton.m</string>
+		<string>Sparrow-Framework source/SPCompiledSprite.h</string>
+		<string>Sparrow-Framework source/SPCompiledSprite.m</string>
+		<string>Sparrow-Framework source/SPDelayedInvocation.h</string>
+		<string>Sparrow-Framework source/SPDelayedInvocation.m</string>
+		<string>Sparrow-Framework source/SPDisplayObject.h</string>
+		<string>Sparrow-Framework source/SPDisplayObject.m</string>
+		<string>Sparrow-Framework source/SPDisplayObject_Internal.h</string>
+		<string>Sparrow-Framework source/SPDisplayObjectContainer.h</string>
+		<string>Sparrow-Framework source/SPDisplayObjectContainer.m</string>
+		<string>Sparrow-Framework source/SPEnterFrameEvent.h</string>
+		<string>Sparrow-Framework source/SPEnterFrameEvent.m</string>
+		<string>Sparrow-Framework source/SPEvent.h</string>
+		<string>Sparrow-Framework source/SPEvent.m</string>
+		<string>Sparrow-Framework source/SPEvent_Internal.h</string>
+		<string>Sparrow-Framework source/SPEventDispatcher.h</string>
+		<string>Sparrow-Framework source/SPEventDispatcher.m</string>
+		<string>Sparrow-Framework source/SPGLTexture.h</string>
+		<string>Sparrow-Framework source/SPGLTexture.m</string>
+		<string>Sparrow-Framework source/SPImage.h</string>
+		<string>Sparrow-Framework source/SPImage.m</string>
+		<string>Sparrow-Framework source/SPJuggler.h</string>
+		<string>Sparrow-Framework source/SPJuggler.m</string>
+		<string>Sparrow-Framework source/SPMacros.h</string>
+		<string>Sparrow-Framework source/SPMatrix.h</string>
+		<string>Sparrow-Framework source/SPMatrix.m</string>
+		<string>Sparrow-Framework source/SPMovieClip.h</string>
+		<string>Sparrow-Framework source/SPMovieClip.m</string>
+		<string>Sparrow-Framework source/SPNSExtensions.h</string>
+		<string>Sparrow-Framework source/SPNSExtensions.m</string>
+		<string>Sparrow-Framework source/SPPoint.h</string>
+		<string>Sparrow-Framework source/SPPoint.m</string>
+		<string>Sparrow-Framework source/SPPoolObject.h</string>
+		<string>Sparrow-Framework source/SPPoolObject.m</string>
+		<string>Sparrow-Framework source/SPQuad.h</string>
+		<string>Sparrow-Framework source/SPQuad.m</string>
+		<string>Sparrow-Framework source/SPRectangle.h</string>
+		<string>Sparrow-Framework source/SPRectangle.m</string>
+		<string>Sparrow-Framework source/SPRendering.m</string>
+		<string>Sparrow-Framework source/SPRenderSupport.h</string>
+		<string>Sparrow-Framework source/SPRenderSupport.m</string>
+		<string>Sparrow-Framework source/SPRenderTexture.h</string>
+		<string>Sparrow-Framework source/SPRenderTexture.m</string>
+		<string>Sparrow-Framework source/SPSound.h</string>
+		<string>Sparrow-Framework source/SPSound.m</string>
+		<string>Sparrow-Framework source/SPSoundChannel.h</string>
+		<string>Sparrow-Framework source/SPSoundChannel.m</string>
+		<string>Sparrow-Framework source/SPSprite.h</string>
+		<string>Sparrow-Framework source/SPSprite.m</string>
+		<string>Sparrow-Framework source/SPStage.h</string>
+		<string>Sparrow-Framework source/SPStage.m</string>
+		<string>Sparrow-Framework source/SPStage_Internal.h</string>
+		<string>Sparrow-Framework source/SPSubTexture.h</string>
+		<string>Sparrow-Framework source/SPSubTexture.m</string>
+		<string>Sparrow-Framework source/SPTextField.h</string>
+		<string>Sparrow-Framework source/SPTextField.m</string>
+		<string>Sparrow-Framework source/SPTexture.h</string>
+		<string>Sparrow-Framework source/SPTexture.m</string>
+		<string>Sparrow-Framework source/SPTextureAtlas.h</string>
+		<string>Sparrow-Framework source/SPTextureAtlas.m</string>
+		<string>Sparrow-Framework source/SPTouch.h</string>
+		<string>Sparrow-Framework source/SPTouch.m</string>
+		<string>Sparrow-Framework source/SPTouch_Internal.h</string>
+		<string>Sparrow-Framework source/SPTouchEvent.h</string>
+		<string>Sparrow-Framework source/SPTouchEvent.m</string>
+		<string>Sparrow-Framework source/SPTouchProcessor.h</string>
+		<string>Sparrow-Framework source/SPTouchProcessor.m</string>
+		<string>Sparrow-Framework source/SPTransitions.h</string>
+		<string>Sparrow-Framework source/SPTransitions.m</string>
+		<string>Sparrow-Framework source/SPTween.h</string>
+		<string>Sparrow-Framework source/SPTween.m</string>
+		<string>Sparrow-Framework source/SPTweenedProperty.h</string>
+		<string>Sparrow-Framework source/SPTweenedProperty.m</string>
+		<string>Sparrow-Framework source/SPUtils.h</string>
+		<string>Sparrow-Framework source/SPUtils.m</string>
+		<string>Sparrow-Framework source/SPView.h</string>
+		<string>Sparrow-Framework source/SPView.m</string>
+	</array>
+</dict>
+</plist>

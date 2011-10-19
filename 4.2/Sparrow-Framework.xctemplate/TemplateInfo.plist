@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.noiseandheat.ios.xcodetemplates.sparrowFramework</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>*:*:importSparrow</key>
+		<string>#import "Sparrow.h"
+</string>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importSparrow</string>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>OTHER_LDFLAGS</key>
+			<array>
+				<string>-ObjC</string>
+				<string>-all_load</string>
+				<string>-lz</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>AudioToolbox</string>
+				<string>AVFoundation</string>
+				<string>OpenAL</string>
+				<string>OpenGLES</string>
+				<string>QuartzCore</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
