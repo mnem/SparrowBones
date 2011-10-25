@@ -26,9 +26,9 @@ def confirm(question)
 		print "    [Yes/No] > "
 		reply = gets.chomp.downcase
 
-		if reply.chr == 'y'
+		if reply[0].chr == 'y'
 			return true
-		elsif reply.chr == 'n'
+		elsif reply[0].chr == 'n'
 			return false
 		end
 	end
@@ -57,7 +57,7 @@ def check_for_existing
 		puts "Looks like this is a first time install."
 	end
 
-	if !Dir.exists?(TARGET_DIR)
+	if !File.exist?(TARGET_DIR)
 		puts "\nCreating user templates directory: #{TARGET_DIR}"
 		FileUtils.mkdir_p TARGET_DIR
 	end
@@ -95,7 +95,7 @@ def create_link
 	version = get_xcode_version
 	if version
 		puts "Linking to templates for Xcode #{version}"
-		File.symlink(File.absolute_path(File.join(File.dirname(__FILE__)), version), FULL_TARGET)
+		File.symlink(File.expand_path(File.join(File.dirname(__FILE__)), version), FULL_TARGET)
 	else
 		abort("\n\nABORTING: No valid Xcode version found.")
 	end
