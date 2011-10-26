@@ -3,13 +3,18 @@
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___PACKAGENAMEASIDENTIFIER___ViewController.h"
+#import "___VARIABLE_classPrefix:identifier___ViewController.h"
 
-@implementation ___PACKAGENAMEASIDENTIFIER___ViewController
+// Private parts
+@interface ___VARIABLE_classPrefix:identifier___ViewController () {
+}
 
+@end
+
+@implementation ___VARIABLE_classPrefix:identifier___ViewController
 #pragma mark - Main entrypoints
 
 - (void)initDisplayTree
@@ -65,13 +70,6 @@
     }
     
     return self;
-}
-
-- (void)dealloc 
-{
-    // Deallocation code here
-    
-    [super dealloc];
 }
 
 @end
