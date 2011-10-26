@@ -79,6 +79,8 @@
 							</dict>
 							<key>Bone Yard/SparrowBonesViewController.m</key>
 							<dict>
+								<key>Group</key>
+								<string>Bone Yard</string>
 								<key>Path</key>
 								<string>SparrowBonesViewControllerMRC.m</string>
 							</dict>
