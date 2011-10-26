@@ -33,7 +33,7 @@
 			<key>Group</key>
 			<string>Bone Yard</string>
 			<key>Path</key>
-			<string>../source/bones/SparrowBones/SparrowBonesViewController.h</string>
+			<string>SparrowBonesViewController.h</string>
 			<key>TargetIndices</key>
 			<array />
 		</dict>
@@ -42,7 +42,7 @@
 			<key>Group</key>
 			<string>Bone Yard</string>
 			<key>Path</key>
-			<string>../source/bones/SparrowBones/SparrowBonesViewController.m</string>
+			<string>SparrowBonesViewController.m</string>
 		</dict>
 	</dict>
 	<key>Description</key>
@@ -77,7 +77,7 @@
 								<key>Path</key>
 								<string>ViewControllerMRC.m</string>
 							</dict>
-							<key>SparrowBonesViewController.m</key>
+							<key>Bone Yard/SparrowBonesViewController.m</key>
 							<dict>
 								<key>Path</key>
 								<string>SparrowBonesViewControllerMRC.m</string>
