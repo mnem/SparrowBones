@@ -39,7 +39,7 @@ There are 2 templates provided:
 - **Game with Sparrow source copied**. Use this if you want the easiest way
 to start a new project. After the wizard you can dive right in. It copies
 a version of Sparrow-Framework into the project directory (current SHA:
-[a8ddd48](https://github.com/PrimaryFeather/Sparrow-Framework/tree/a8ddd48)).
+[12d37ca](https://github.com/PrimaryFeather/Sparrow-Framework/tree/12d37ca)).
 
 - **Game with Sparrow source linked**.  This template requires you to
 perform some minor post creation configuration. When you create a new project
