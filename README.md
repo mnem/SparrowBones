@@ -19,7 +19,7 @@ me know :)
 Installation
 ============
 
-After cloning this repository and updating the submodules, run the 
+After cloning this repository and updating the submodules, run the
 installation script in the root of the repository:
 
     git clone git://github.com/mnem/SparrowBones.git
@@ -39,7 +39,7 @@ There are 2 templates provided:
 - **Game with Sparrow source copied**. Use this if you want the easiest way
 to start a new project. After the wizard you can dive right in. It copies
 a version of Sparrow-Framework into the project directory (current SHA:
-[12d37ca](https://github.com/PrimaryFeather/Sparrow-Framework/tree/12d37ca)).
+[b1220ee](https://github.com/PrimaryFeather/Sparrow-Framework/tree/b1220ee)).
 
 - **Game with Sparrow source linked**.  This template requires you to
 perform some minor post creation configuration. When you create a new project
