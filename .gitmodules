@@ -1,6 +1,0 @@
-[submodule "4.1/source/Sparrow-Framework"]
-	path = 4.1/source/Sparrow-Framework
-	url = https://github.com/PrimaryFeather/Sparrow-Framework.git
-[submodule "4.2/source/Sparrow-Framework"]
-	path = 4.2/source/Sparrow-Framework
-	url = https://github.com/PrimaryFeather/Sparrow-Framework.git
