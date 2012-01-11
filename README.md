@@ -19,12 +19,11 @@ me know :)
 Installation
 ============
 
-After cloning this repository and updating the submodules, run the
-installation script in the root of the repository:
+After cloning this repository, run the installation script in the root of
+the repository:
 
     git clone git://github.com/mnem/SparrowBones.git
     cd SparrowBones
-    git submodule update --init
     ./install.rb
 
 It makes sure your Xcode template folder exists, tries to work out which
@@ -58,7 +57,6 @@ should work:
 
     cd SparrowBones
     git pull origin master
-    git submodule update --init
 
 NOTE: This only affects newly created projects. There's no easy way to
 update all your existing projects.
