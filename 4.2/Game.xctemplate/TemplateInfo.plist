@@ -67,7 +67,7 @@
 			<string>useARC</string>
 			<key>Units</key>
 			<dict>
-				<key>false</key>
+				<key>true</key>
 				<array>
 					<dict>
 						<key>Definitions</key>

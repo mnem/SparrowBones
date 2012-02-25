@@ -77,7 +77,7 @@
         screenFrame.size.height = oldWidth;
     }
 #endif // VIEW_ORIENTATION_PORTRAIT
-    
+
     return screenFrame;
 }
 
@@ -90,11 +90,11 @@
     SPView* rootView = [[SPView alloc] initWithFrame:screenFrame];
 
     rootView.contentMode = UIViewContentModeTopLeft;
-    
+
     rootView.stage = _stage;
     rootView.multipleTouchEnabled = NO;
     rootView.frameRate = 30.0f;
-    
+
     self.view = rootView;
 
     SP_RELEASE_POOL(pool);
@@ -103,13 +103,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     // Create the stage
     [SPStage setSupportHighResolutions:YES];
 
     float longEdge = LONG_EDGE_POINTS_IPHONE;
     float shortEdge = SHORT_EDGE_POINTS_IPHONE;
-    
+
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
         longEdge = LONG_EDGE_POINTS_IPAD;
@@ -117,24 +117,24 @@
     }
 
 #if VIEW_ORIENTATION_LANDSCAPE
-    _stage = [[SPStage alloc] initWithWidth:longEdge height:shortEdge];        
+    _stage = [[SPStage alloc] initWithWidth:longEdge height:shortEdge];
 #endif // VIEW_ORIENTATION_LANDSCAPE
-    
+
 #if VIEW_ORIENTATION_PORTRAIT
-    _stage = [[SPStage alloc] initWithWidth:shortEdge height:longEdge];        
+    _stage = [[SPStage alloc] initWithWidth:shortEdge height:longEdge];
 #endif // VIEW_ORIENTATION_PORTRAIT
-        
+
     self.spview.stage = _stage;
     self.spview.multipleTouchEnabled = NO;
     self.spview.frameRate = 30.0f;
-    
+
     // Listen out for Application state changes so we can pause and resume
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActiveNotification:) name:UIApplicationWillResignActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActiveNotification:) name:UIApplicationDidBecomeActiveNotification object:nil];
 
     // Start the audio
     [SPAudioEngine start];
-    
+
     // Start the view
     [self.spview start];
 
@@ -144,18 +144,10 @@
 
 - (void)didReceiveMemoryWarning
 {
-    // Stop listenting for Application state cahnges
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-
-    // Stop the SPView and audio and remove the stage
-    [self.spview stop];
-    [SPAudioEngine stop];
-    self.spview.stage = nil;
-
     // Release any cached data, images, etc that aren't in use.
     [SPPoint purgePool];
     [SPRectangle purgePool];
-    [SPMatrix purgePool];    
+    [SPMatrix purgePool];
 
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -163,6 +155,11 @@
 
 - (void)viewDidUnload
 {
+    // Stop listenting for Application state cahnges
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
+    [SPAudioEngine stop];
+
     [self releaseDisplayTree];
     [super viewDidUnload];
 }
@@ -174,7 +171,7 @@
 #if VIEW_ORIENTATION_LANDSCAPE
     return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 #endif // VIEW_ORIENTATION_LANDSCAPE
-    
+
 #if VIEW_ORIENTATION_PORTRAIT
     return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 #endif // VIEW_ORIENTATION_PORTRAIT

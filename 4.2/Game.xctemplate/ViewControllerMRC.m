@@ -25,7 +25,7 @@
     SPQuad* center = [SPQuad quadWithWidth:100 height:100 color:0xffffff];
     SPTextField* top = [SPTextField textFieldWithWidth:100 height:14 text:@"Top" fontName:@"Helvetica" fontSize:14 color:0xffffff];
     SPTextField* bottom = [SPTextField textFieldWithWidth:100 height:14 text:@"Bottom" fontName:@"Helvetica" fontSize:14 color:0xffffff];
-    
+
     topLeft.x = 0;
     topLeft.y = 0;
 
@@ -40,18 +40,18 @@
 
     center.x = (self.stage.width - center.width) / 2.0f;
     center.y = (self.stage.height - center.height) / 2.0f;
-    
+
     top.x = (self.stage.width - top.width) / 2.0f;
     top.y = 0;
-    
+
     bottom.x = (self.stage.width - bottom.width) / 2.0f;
     bottom.y = self.stage.height - bottom.height;
 
     // self.stage refers to the main stage container for this view.
-    [self.stage addChild:topLeft];    
-    [self.stage addChild:topRight];    
-    [self.stage addChild:bottomLeft];    
-    [self.stage addChild:bottomRight];    
+    [self.stage addChild:topLeft];
+    [self.stage addChild:topRight];
+    [self.stage addChild:bottomLeft];
+    [self.stage addChild:bottomRight];
     [self.stage addChild:center];
     [self.stage addChild:top];
     [self.stage addChild:bottom];
@@ -63,18 +63,11 @@
 - (id)init
 {
     self = [super init];
-    if (self) 
+    if (self)
     {
         // Initialization code here.
     }
-    
-    return self;
-}
 
-- (void)dealloc 
-{
-    // Deallocation code here
-    
-    [super dealloc];
+    return self;
 }
 @end
