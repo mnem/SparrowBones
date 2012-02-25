@@ -3,10 +3,10 @@
 //  AppScaffold
 //
 
-#import "ApplicationDelegate.h"
+#import "AppDelegate.h"
 #import "Game.h" 
 
-@implementation ApplicationDelegate
+@implementation AppDelegate
 
 - (id)init
 {
@@ -20,22 +20,21 @@
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
-{    
-    SP_CREATE_POOL(pool);    
+{   
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     [SPStage setSupportHighResolutions:YES];
     [SPAudioEngine start];
     
     Game *game = [[Game alloc] init];        
     mSparrowView.stage = game;
-    mSparrowView.multipleTouchEnabled = NO;
     mSparrowView.frameRate = 30.0f;
     [game release];
     
     [mWindow makeKeyAndVisible];
     [mSparrowView start];
     
-    SP_RELEASE_POOL(pool);
+    [pool release];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application 

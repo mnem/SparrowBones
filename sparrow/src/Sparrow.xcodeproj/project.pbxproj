@@ -34,6 +34,11 @@
 		DE33072512D2EBCD009CC5E7 /* SPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DE33072312D2EBCD009CC5E7 /* SPUtils.h */; settings = {ATTRIBUTES = (); }; };
 		DE33072612D2EBCD009CC5E7 /* SPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE33072412D2EBCD009CC5E7 /* SPUtils.m */; };
 		DE33072B12D2ED1A009CC5E7 /* SPUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE33072812D2ECB1009CC5E7 /* SPUtilsTest.m */; };
+		DE57B32314E8F789002BD1A8 /* SPMacrosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE57B32014E8F71F002BD1A8 /* SPMacrosTest.m */; };
+		DE57B32914E90397002BD1A8 /* image_only_sd.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57B32814E90397002BD1A8 /* image_only_sd.png */; };
+		DE57B32B14E90647002BD1A8 /* image_only_hd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57B32A14E90647002BD1A8 /* image_only_hd@2x.png */; };
+		DE57B33214E916E7002BD1A8 /* image_idiom@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57B33014E916E7002BD1A8 /* image_idiom@2x~iphone.png */; };
+		DE57B33314E916E7002BD1A8 /* image_idiom~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DE57B33114E916E7002BD1A8 /* image_idiom~iphone.png */; };
 		DE5A7ED613805C2B00C6CBBC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5A7ED513805C2B00C6CBBC /* libz.dylib */; };
 		DE611371134F8F6C00AB742E /* SPAVSound.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF1735A11B075B000A11DD7 /* SPAVSound.h */; settings = {ATTRIBUTES = (); }; };
 		DE611372134F8F6C00AB742E /* SPAVSoundChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF1735E11B075BC00A11DD7 /* SPAVSoundChannel.h */; settings = {ATTRIBUTES = (); }; };
@@ -77,6 +82,7 @@
 		DE61139A134F8FBD00AB742E /* SPNSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DE68EA150FBB5660004DBC95 /* SPNSExtensions.h */; settings = {ATTRIBUTES = (); }; };
 		DE61139B134F8FBD00AB742E /* SPPoolObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DED9B51B10629D9F00989853 /* SPPoolObject.h */; settings = {ATTRIBUTES = (); }; };
 		DE61139C134F8FD400AB742E /* Sparrow.h in Headers */ = {isa = PBXBuildFile; fileRef = DEEA9402101E44F10071DD21 /* Sparrow.h */; settings = {ATTRIBUTES = (); }; };
+		DEB5142C14F1848B00066104 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB5142B14F1848B00066104 /* SenTestingKit.framework */; };
 		DEC734811386BC1400234D95 /* SPTextureAtlas.h in Headers */ = {isa = PBXBuildFile; fileRef = DECF84260FF619150026A4ED /* SPTextureAtlas.h */; settings = {ATTRIBUTES = (); }; };
 		DEC734AA1386C02600234D95 /* SPTextureAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = DECF84270FF619150026A4ED /* SPTextureAtlas.m */; };
 		DED8B48711B0827E00A1766C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -189,6 +195,11 @@
 		DE4D6AEA0F75913D0045CBF7 /* SPSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSprite.h; sourceTree = "<group>"; };
 		DE4D6AEB0F75913D0045CBF7 /* SPSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSprite.m; sourceTree = "<group>"; };
 		DE5286BA11F77C6200F916E8 /* SPDelayedInvocationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDelayedInvocationTest.m; sourceTree = "<group>"; };
+		DE57B32014E8F71F002BD1A8 /* SPMacrosTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMacrosTest.m; sourceTree = "<group>"; };
+		DE57B32814E90397002BD1A8 /* image_only_sd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_only_sd.png; sourceTree = "<group>"; };
+		DE57B32A14E90647002BD1A8 /* image_only_hd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_only_hd@2x.png"; sourceTree = "<group>"; };
+		DE57B33014E916E7002BD1A8 /* image_idiom@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_idiom@2x~iphone.png"; sourceTree = "<group>"; };
+		DE57B33114E916E7002BD1A8 /* image_idiom~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_idiom~iphone.png"; sourceTree = "<group>"; };
 		DE5A7ED513805C2B00C6CBBC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DE68EA150FBB5660004DBC95 /* SPNSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNSExtensions.h; sourceTree = "<group>"; };
 		DE68EA160FBB5660004DBC95 /* SPNSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNSExtensions.m; sourceTree = "<group>"; };
@@ -203,6 +214,7 @@
 		DE9CF1EB0FED3128008A32FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DEABCF5B0F7AE187003B6C9D /* SPPointTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPointTest.m; sourceTree = "<group>"; };
 		DEB21CF80F93C9780080D5C2 /* SPDisplayObjectContainerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDisplayObjectContainerTest.m; sourceTree = "<group>"; };
+		DEB5142B14F1848B00066104 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DEC2B6790F6D4CE90063AB1D /* SPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPView.h; sourceTree = "<group>"; };
 		DEC2B67A0F6D4CE90063AB1D /* SPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPView.m; sourceTree = "<group>"; };
 		DEC2B6800F6D51430063AB1D /* SPEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEventDispatcher.h; sourceTree = "<group>"; };
@@ -281,6 +293,7 @@
 			files = (
 				DEEA934E101E33F00071DD21 /* libSparrow.a in Frameworks */,
 				DE02408D13819FAD008A91B9 /* libz.dylib in Frameworks */,
+				DEB5142C14F1848B00066104 /* SenTestingKit.framework in Frameworks */,
 				DEEA933A101E32E10071DD21 /* CoreGraphics.framework in Frameworks */,
 				DEEA933B101E32E10071DD21 /* Foundation.framework in Frameworks */,
 				DEEA933C101E32E10071DD21 /* OpenGLES.framework in Frameworks */,
@@ -360,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5A7ED513805C2B00C6CBBC /* libz.dylib */,
+				DEB5142B14F1848B00066104 /* SenTestingKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				DE9CF1EB0FED3128008A32FF /* CoreGraphics.framework */,
 				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
@@ -405,23 +419,24 @@
 		DEABCDE80F7ABE71003B6C9D /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE0456E413882A27005FFBCE /* SPButtonTest.m */,
 				DE5286BA11F77C6200F916E8 /* SPDelayedInvocationTest.m */,
-				DEABCF5B0F7AE187003B6C9D /* SPPointTest.m */,
-				DE8F1E2D0F7C1F3A0085E9E4 /* SPMatrixTest.m */,
-				DE469D6E0F938FAB00F56E91 /* SPDisplayObjectTest.m */,
 				DEB21CF80F93C9780080D5C2 /* SPDisplayObjectContainerTest.m */,
-				DED2B6F90FA0CF5900083578 /* SPQuadTest.m */,
-				DED67F330FA3514C0050E779 /* SPStageTest.m */,
-				DED67F7C0FA359F00050E779 /* SPRectangleTest.m */,
+				DE469D6E0F938FAB00F56E91 /* SPDisplayObjectTest.m */,
 				DEE594490FA63BA800E3AEFC /* SPEventDispatcherTest.m */,
-				DE75E8660FBDC57E00C64495 /* SPTweenTest.m */,
 				DE0853A40FEC286900DAF53C /* SPImageTest.m */,
 				DE1F9446104704440084D470 /* SPJugglerTest.m */,
+				DE57B32014E8F71F002BD1A8 /* SPMacrosTest.m */,
+				DE8F1E2D0F7C1F3A0085E9E4 /* SPMatrixTest.m */,
 				DEC54F6211B7765500E439B0 /* SPMovieClipTest.m */,
 				DE05748611E915A900F3A8A4 /* SPNSExtensionsTest.m */,
-				DE33072812D2ECB1009CC5E7 /* SPUtilsTest.m */,
+				DEABCF5B0F7AE187003B6C9D /* SPPointTest.m */,
 				DEF8F2CE12E1CCF50043D2F8 /* SPPoolObjectTest.m */,
-				DE0456E413882A27005FFBCE /* SPButtonTest.m */,
+				DED2B6F90FA0CF5900083578 /* SPQuadTest.m */,
+				DED67F7C0FA359F00050E779 /* SPRectangleTest.m */,
+				DED67F330FA3514C0050E779 /* SPStageTest.m */,
+				DE75E8660FBDC57E00C64495 /* SPTweenTest.m */,
+				DE33072812D2ECB1009CC5E7 /* SPUtilsTest.m */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -566,6 +581,10 @@
 		DEEA573E13878E060030A901 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				DE57B33014E916E7002BD1A8 /* image_idiom@2x~iphone.png */,
+				DE57B33114E916E7002BD1A8 /* image_idiom~iphone.png */,
+				DE57B32A14E90647002BD1A8 /* image_only_hd@2x.png */,
+				DE57B32814E90397002BD1A8 /* image_only_sd.png */,
 				DEEA573F13878E060030A901 /* pvrtc_image.pvr */,
 				DEEA5745138791AB0030A901 /* pvrtc_image@2x.pvr */,
 			);
@@ -703,7 +722,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sparrow" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -732,6 +751,10 @@
 			files = (
 				DEEA57441387905C0030A901 /* pvrtc_image.pvr in Resources */,
 				DEEA5746138791AE0030A901 /* pvrtc_image@2x.pvr in Resources */,
+				DE57B32914E90397002BD1A8 /* image_only_sd.png in Resources */,
+				DE57B32B14E90647002BD1A8 /* image_only_hd@2x.png in Resources */,
+				DE57B33214E916E7002BD1A8 /* image_idiom@2x~iphone.png in Resources */,
+				DE57B33314E916E7002BD1A8 /* image_idiom~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +798,7 @@
 				DE33072B12D2ED1A009CC5E7 /* SPUtilsTest.m in Sources */,
 				DEF8F2D312E1CDF40043D2F8 /* SPPoolObjectTest.m in Sources */,
 				DE0456E813882B4E005FFBCE /* SPButtonTest.m in Sources */,
+				DE57B32314E8F789002BD1A8 /* SPMacrosTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,7 +867,11 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -853,6 +881,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -862,13 +895,22 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -877,19 +919,12 @@
 		DEEA9337101E32A40071DD21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_NAME = UnitTest;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -898,19 +933,12 @@
 		DEEA9338101E32A40071DD21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_NAME = UnitTest;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -919,19 +947,31 @@
 		DEFE4BC3101B317700E22471 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Sperl";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Sparrow;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8F2B7F7C-97B8-4A99-B7EE-104D609292F6";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
 		};
 		DEFE4BC4101B317700E22471 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Sparrow;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Release;
