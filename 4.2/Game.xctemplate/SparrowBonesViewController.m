@@ -144,14 +144,6 @@
 
 - (void)didReceiveMemoryWarning
 {
-    // Stop listenting for Application state cahnges
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-
-    // Stop the SPView and audio and remove the stage
-    [self.spview stop];
-    [SPAudioEngine stop];
-    self.spview.stage = nil;
-
     // Release any cached data, images, etc that aren't in use.
     [SPPoint purgePool];
     [SPRectangle purgePool];
@@ -163,6 +155,12 @@
 
 - (void)viewDidUnload
 {
+    // Stop listenting for Application state cahnges
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
+    // Stop the SPView and audio and remove the stage
+    [SPAudioEngine stop];
+
     // Release the display tree
     [self releaseDisplayTree];
 
