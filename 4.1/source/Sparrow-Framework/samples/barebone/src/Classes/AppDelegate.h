@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ApplicationDelegate : NSObject <UIApplicationDelegate> 
+@interface AppDelegate : NSObject <UIApplicationDelegate> 
 {
   @private 
     UIWindow *mWindow;
