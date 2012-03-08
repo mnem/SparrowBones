@@ -26,7 +26,7 @@
 	| / |
 	2 - 3
  
- *Colors*
+ **Colors**
  
  Colors in Sparrow are defined as unsigned integers, that's exactly 8 bit per color. The easiest
  way to define a color is by writing it as a hexadecimal number. A color has the following
@@ -85,6 +85,9 @@
 
 /// Factory method.
 + (SPQuad*)quadWithWidth:(float)width height:(float)height color:(uint)color;
+
+/// Factory method. Creates a 32x32 quad.
++ (SPQuad*)quad;
 
 /// ----------------
 /// @name Properties

@@ -109,6 +109,9 @@ typedef enum
 /// Animates the `scaleX` and `scaleY` properties of an object simultaneously.
 - (void)scaleTo:(float)scale;
 
+/// Animates the `alpha` property.
+- (void)fadeTo:(float)alpha;
+
 /// ----------------
 /// @name Properties
 /// ----------------
@@ -121,6 +124,9 @@ typedef enum
 
 /// The total time the tween will take (in seconds).
 @property (nonatomic, readonly) double time;
+
+/// The time that has passed since the tween was started (in seconds).
+@property (nonatomic, readonly) double currentTime;
 
 /// The delay before the tween is started.
 @property (nonatomic, assign)   double delay;

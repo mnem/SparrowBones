@@ -68,7 +68,7 @@ static NSMutableArray *stages = NULL;
     // dispatch EnterFrameEvent
     SPEnterFrameEvent *enterFrameEvent = [[SPEnterFrameEvent alloc] 
         initWithType:SP_EVENT_TYPE_ENTER_FRAME passedTime:seconds];
-    [self dispatchEventOnChildren:enterFrameEvent];
+    [self broadcastEvent:enterFrameEvent];
     [enterFrameEvent release];
 }
 
@@ -206,7 +206,7 @@ static NSMutableArray *stages = NULL;
     if (hd != supportHighResolutions || pad != doubleOnPad)
     {
         supportHighResolutions = hd;
-        doubleOnPad = hd || pad; // only makes sense with hd = YES
+        doubleOnPad = hd && pad; // only makes sense with hd = YES
         [self updateNativeViews];
     }
 }

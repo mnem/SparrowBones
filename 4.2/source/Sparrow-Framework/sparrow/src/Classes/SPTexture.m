@@ -52,7 +52,9 @@ enum PVRPixelType
 	OGL_I_8,
 	OGL_AI_88,
 	OGL_PVRTC2,
-	OGL_PVRTC4
+	OGL_PVRTC4,
+    OGL_BGRA_8888,
+    OGL_A_8
 };
     
 // --- private interface ---------------------------------------------------------------------------
@@ -105,8 +107,8 @@ enum PVRPixelType
         // load image via this crazy workaround to be sure that path is not extended with scale
         NSData *data = [[NSData alloc] initWithContentsOfFile:fullPath];
         UIImage *image1 = [[UIImage alloc] initWithData:data];
-        UIImage *image2 = [[UIImage alloc] initWithCGImage:image1.CGImage scale:contentScaleFactor 
-                                               orientation:UIImageOrientationUp];
+        UIImage *image2 = [[UIImage alloc] initWithCGImage:image1.CGImage 
+                          scale:[fullPath contentScaleFactor] orientation:UIImageOrientationUp];
         self = [self initWithContentsOfImage:image2];
         
         [image2 release];
@@ -239,6 +241,15 @@ enum PVRPixelType
         case OGL_RGBA_8888:
             properties.format = SPTextureFormatRGBA;
             break;
+        case OGL_A_8:
+            properties.format = SPTextureFormatAlpha;
+            break;
+        case OGL_I_8:
+            properties.format = SPTextureFormatI8;
+            break;
+        case OGL_AI_88:
+            properties.format = SPTextureFormatAI88;
+            break;
         case OGL_PVRTC2:
             properties.format = hasAlpha ? SPTextureFormatPvrtcRGBA2 : SPTextureFormatPvrtcRGB2;
             break;
@@ -252,10 +263,7 @@ enum PVRPixelType
 
     void *imageData = (unsigned char *)header + header->headerSize;
     SPGLTexture *glTexture = [[SPGLTexture alloc] initWithData:imageData properties:properties];
-    
-    NSString *baseFilename = [[path lastPathComponent] stringByDeletingFullPathExtension];
-    if ([baseFilename rangeOfString:@"@2x"].location == baseFilename.length - 3)
-        glTexture.scale = 2.0f;
+    glTexture.scale = [path contentScaleFactor];
     
     SP_RELEASE_POOL(pool);
     
