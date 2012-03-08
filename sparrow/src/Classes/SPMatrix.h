@@ -57,7 +57,7 @@
 /// Sets all components simultaneously.
 - (void)setA:(float)a b:(float)b c:(float)c d:(float)d tx:(float)tx ty:(float)ty;
 
-/// Compares to matrices.
+/// Compares two matrices.
 - (BOOL)isEqual:(id)other;
 
 /// Concatenates a matrix with the current matrix, combining the geometric effects of the two.
@@ -88,12 +88,22 @@
 /// @name Properties
 /// ----------------
 
-/// Matrix component.
+/// The a component of the matrix.
 @property (nonatomic, assign) float a;
+
+/// The b component of the matrix.
 @property (nonatomic, assign) float b;
+
+/// The c component of the matrix.
 @property (nonatomic, assign) float c;
+
+/// The d component of the matrix.
 @property (nonatomic, assign) float d;
+
+/// The tx component of the matrix.
 @property (nonatomic, assign) float tx;
+
+/// The ty component of the matrix.
 @property (nonatomic, assign) float ty;
 
 /// The determinant of the matrix.
