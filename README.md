@@ -1,6 +1,20 @@
 SparrowBones Xcode 4 Template
 =============================
 
+__UPDATE__: [Sparrow 1.3](http://gamua.com/blog/2012/03/sparrow-1-3/) has now
+been released and it includes an updated and significantly enhanced
+AppScaffold project which makes most of the reasons to use SparrowBones
+redundant. I recommend you use the official AppScaffold project as a starting
+point now, rather than SparrowBones.
+
+I'll probably keep updating this for a little while, but I doubt I'll extend
+it much beyond bug fixes.
+
+It'll be all redundant when Sparrow Framework 2 comes out later this year
+anyway :)
+
+---
+
 These are simple templates for producing Sparrow-Framework based games
 on iOS.
 
