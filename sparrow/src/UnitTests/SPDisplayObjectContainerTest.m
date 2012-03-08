@@ -34,6 +34,7 @@
     int mRemovedFromStage;
     int mEventCount;
     SPSprite *mTestSprite;
+    SPEventDispatcher *mBroadcastTarget;
 }
 
 - (void)addQuadToSprite:(SPSprite*)sprite;
@@ -95,6 +96,35 @@
     [child2 release];
     [child1 release];
     [parent release];
+}
+
+- (void)testSetChildIndex
+{
+    SPSprite *parent = [SPSprite sprite];
+    SPSprite *childA = [SPSprite sprite];
+    SPSprite *childB = [SPSprite sprite];
+    SPSprite *childC = [SPSprite sprite];
+    
+    [parent addChild:childA];
+    [parent addChild:childB];
+    [parent addChild:childC];
+    
+    [parent setIndex:0 ofChild:childB];
+    STAssertEquals(childB, [parent childAtIndex:0], @"wrong child order");
+    STAssertEquals(childA, [parent childAtIndex:1], @"wrong child order");
+    STAssertEquals(childC, [parent childAtIndex:2], @"wrong child order");
+    
+    [parent setIndex:1 ofChild:childB];
+    STAssertEquals(childA, [parent childAtIndex:0], @"wrong child order");
+    STAssertEquals(childB, [parent childAtIndex:1], @"wrong child order");
+    STAssertEquals(childC, [parent childAtIndex:2], @"wrong child order");
+    
+    [parent setIndex:2 ofChild:childB];
+    STAssertEquals(childA, [parent childAtIndex:0], @"wrong child order");
+    STAssertEquals(childC, [parent childAtIndex:1], @"wrong child order");
+    STAssertEquals(childB, [parent childAtIndex:2], @"wrong child order");
+    
+    STAssertEquals(3, parent.numChildren, @"wrong child count");
 }
 
 - (void)testWidthAndHeight
@@ -373,18 +403,44 @@
     child1.name = @"CHILD";
     child3.name = @"child";
     
-    STAssertEqualObjects(child1, [parent childByName:@"CHILD"], @"wrong child returned");
-    STAssertEqualObjects(child3, [parent childByName:@"child"], @"wrong child returned");
+    STAssertEquals(child1, [parent childByName:@"CHILD"], @"wrong child returned");
+    STAssertEquals(child3, [parent childByName:@"child"], @"wrong child returned");
     STAssertNil([parent childByName:@"ChIlD"], @"return child on wrong name");
 }
 
-- (void)testDispatchEventOnChildren
+- (void)testSortChildren
+{
+    SPSprite *s1 = [SPSprite sprite]; s1.y = 8;
+    SPSprite *s2 = [SPSprite sprite]; s2.y = 3;
+    SPSprite *s3 = [SPSprite sprite]; s3.y = 6;
+    SPSprite *s4 = [SPSprite sprite]; s4.y = 1;
+    
+    SPSprite *parent = [SPSprite sprite];
+    [parent addChild:s1];
+    [parent addChild:s2];
+    [parent addChild:s3];
+    [parent addChild:s4];
+    
+    [parent sortChildren:^(SPDisplayObject *child1, SPDisplayObject *child2) 
+    {
+        if (child1.y < child2.y) return NSOrderedAscending;
+        else if (child1.y > child2.y) return NSOrderedDescending;
+        else return NSOrderedSame;
+    }];
+
+    STAssertEquals(s4, [parent childAtIndex:0], @"incorrect sort");
+    STAssertEquals(s2, [parent childAtIndex:1], @"incorrect sort");
+    STAssertEquals(s3, [parent childAtIndex:2], @"incorrect sort");
+    STAssertEquals(s1, [parent childAtIndex:3], @"incorrect sort");
+}
+
+- (void)testBroadcastEvent
 {
     SPSprite *parent = [SPSprite sprite];
 
-    SPSprite *child1 = [[SPSprite alloc] init];
-    SPSprite *child2 = [[SPSprite alloc] init];
-    SPSprite *child3 = [[SPSprite alloc] init];
+    SPSprite *child1 = [SPSprite sprite];
+    SPSprite *child2 = [SPSprite sprite];
+    SPSprite *child3 = [SPSprite sprite];
     
     [parent addChild:child1];
     [parent addChild:child2];
@@ -395,18 +451,41 @@
     [child2 addEventListener:@selector(onChildEvent:) atObject:self forType:@"dunno"];
     [child3 addEventListener:@selector(onChildEvent:) atObject:self forType:@"dunno"];
     
-    [child1 release];
-    [child2 release];
-    [child3 release];
-    
     SPEvent *event = [SPEvent eventWithType:@"dunno"];
-    [parent dispatchEventOnChildren:event];
+    [parent broadcastEvent:event];
     
     // event should have dispatched to all 3 children, even if the event listener
     // removes the children from their parent when it reaches child1. Furthermore, it should
     // not crash.
     
     STAssertEquals(3, mEventCount, @"not all children received events!");
+}
+
+- (void)testBroadcastEventTarget
+{
+    SPSprite *parent = [SPSprite sprite];
+    SPSprite *childA = [SPSprite sprite];
+    SPSprite *childA1 = [SPSprite sprite];
+    SPSprite *childA2 = [SPSprite sprite];
+    
+    [parent addChild:childA];
+    [parent addChild:childA1];
+    [parent addChild:childA2];
+    
+    parent.name = @"parent";
+    childA.name = @"childA";
+    childA1.name = @"childA1";
+    childA2.name = @"childA2";
+    
+    [childA2 addEventListener:@selector(onBroadcastEvent:) atObject:self forType:@"test"];
+    [parent broadcastEvent:[SPEvent eventWithType:@"test"]];
+    
+    STAssertEquals(parent, mBroadcastTarget, @"wrong event.target on broadcast");
+}
+
+- (void)onBroadcastEvent:(SPEvent *)event
+{
+    mBroadcastTarget = event.target;
 }
 
 - (void)onChildEvent:(SPEvent *)event

@@ -13,6 +13,7 @@
 #import "SPEnterFrameEvent.h"
 #import "SPDisplayObject_Internal.h"
 #import "SPMacros.h"
+#import "SPEvent_Internal.h"
 
 // --- C functions ---------------------------------------------------------------------------------
 
@@ -74,7 +75,7 @@ static void getChildEventListeners(SPDisplayObject *object, NSString *eventType,
         if (self.stage)
         {
             SPEvent *addedToStageEvent = [[SPEvent alloc] initWithType:SP_EVENT_TYPE_ADDED_TO_STAGE];
-            [child dispatchEventOnChildren:addedToStageEvent];
+            [child broadcastEvent:addedToStageEvent];
             [addedToStageEvent release];
         }
         
@@ -122,6 +123,20 @@ static void getChildEventListeners(SPDisplayObject *object, NSString *eventType,
     else                     return index;
 }
 
+- (void)setIndex:(int)index ofChild:(SPDisplayObject *)child
+{
+    int oldIndex = [mChildren indexOfObject:child];
+    if (oldIndex == NSNotFound) 
+        [NSException raise:SP_EXC_INVALID_OPERATION format:@"Not a child of this container"];
+    else
+    {
+        [child retain];
+        [mChildren removeObjectAtIndex:oldIndex];
+        [mChildren insertObject:child atIndex:index];
+        [child release];
+    }
+}
+
 - (void)removeChild:(SPDisplayObject *)child
 {
     int childIndex = [self childIndex:child];
@@ -142,7 +157,7 @@ static void getChildEventListeners(SPDisplayObject *object, NSString *eventType,
         if (self.stage)
         {
             SPEvent *remFromStageEvent = [[SPEvent alloc] initWithType:SP_EVENT_TYPE_REMOVED_FROM_STAGE];
-            [child dispatchEventOnChildren:remFromStageEvent];
+            [child broadcastEvent:remFromStageEvent];
             [remFromStageEvent release];
         }        
         
@@ -167,6 +182,15 @@ static void getChildEventListeners(SPDisplayObject *object, NSString *eventType,
     if (index1 < 0 || index1 >= numChildren || index2 < 0 || index2 >= numChildren)
         [NSException raise:SP_EXC_INVALID_OPERATION format:@"invalid child indices"];
     [mChildren exchangeObjectAtIndex:index1 withObjectAtIndex:index2];
+}
+
+- (void)sortChildren:(NSComparator)comparator
+{
+    if ([mChildren respondsToSelector:@selector(sortWithOptions:usingComparator:)])
+        [mChildren sortWithOptions:NSSortStable usingComparator:comparator];
+    else
+        [NSException raise:SP_EXC_INVALID_OPERATION 
+                    format:@"sortChildren is only available in iOS 4 and above"];
 }
 
 - (void)removeAllChildren
@@ -228,19 +252,23 @@ static void getChildEventListeners(SPDisplayObject *object, NSString *eventType,
     return nil;
 }
 
-- (void)dispatchEventOnChildren:(SPEvent *)event
+- (void)broadcastEvent:(SPEvent *)event
 {
+    if (event.bubbles) 
+        [NSException raise:SP_EXC_INVALID_OPERATION 
+                    format:@"Broadcast of bubbling events is prohibited"];
+    
     // the event listeners might modify the display tree, which could make the loop crash. 
     // thus, we collect them in a list and iterate over that list instead.
-    
     NSMutableArray *listeners = [[NSMutableArray alloc] init];
-    getChildEventListeners(self, event.type, listeners);        
+    getChildEventListeners(self, event.type, listeners);
+    [event setTarget:self];
     [listeners makeObjectsPerformSelector:@selector(dispatchEvent:) withObject:event];
     [listeners release];
 }
 
 - (void)dealloc 
-{    
+{
     // 'self' is becoming invalid; thus, we have to remove any references to it.    
     [mChildren makeObjectsPerformSelector:@selector(setParent:) withObject:nil];
     [mChildren release];

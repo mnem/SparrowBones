@@ -21,6 +21,7 @@ typedef float (*FnPtrTransition) (id, SEL, float);
 @implementation SPTween
 
 @synthesize time = mTotalTime;
+@synthesize currentTime = mCurrentTime;
 @synthesize delay = mDelay;
 @synthesize target = mTarget;
 @synthesize loop = mLoop;
@@ -73,6 +74,11 @@ typedef float (*FnPtrTransition) (id, SEL, float);
 {
     [self animateProperty:@"scaleX" targetValue:scale];
     [self animateProperty:@"scaleY" targetValue:scale];
+}
+
+- (void)fadeTo:(float)alpha
+{
+    [self animateProperty:@"alpha" targetValue:alpha];
 }
 
 - (void)advanceTime:(double)seconds

@@ -26,7 +26,7 @@
  As this is an abstract class, you can't instantiate it directly, but have to 
  use a subclass instead. The most lightweight container class is SPSprite.
  
- *Adding and removing children*
+ **Adding and removing children**
  
  The class defines methods that allow you to add or remove children. When you add a child, it will
  be added at the foremost position, possibly occluding a child that was added before. You can access
@@ -43,6 +43,19 @@
  
  Especially the `ADDED_TO_STAGE` event is very helpful, as it allows you to automatically execute
  some logic (e.g. start an animation) when an object is rendered the first time.
+ 
+ **Sorting children**
+ 
+ The `sortChildren:` method allows you to sort the children of a container by a custom criteria. 
+ Below is an example how to depth-sort children by their y-coordinate; this will put objects that
+ are lower on the screen in front of those higher on the screen.
+ 
+	[container sortChildren:^(SPDisplayObject *child1, SPDisplayObject *child2) 
+	{
+	    if (child1.y < child2.y) return NSOrderedAscending;
+	    else if (child1.y > child2.y) return NSOrderedDescending;
+	    else return NSOrderedSame;
+	}];
  
 ------------------------------------------------------------------------------------------------- */
 
@@ -74,6 +87,9 @@
 /// Returns the index of a child within the container.
 - (int)childIndex:(SPDisplayObject *)child;
 
+/// Moves a child to a certain index. Children at and after the replaced position move up.
+- (void)setIndex:(int)index ofChild:(SPDisplayObject *)child;
+
 /// Removes a child from the container. If the object is not a child, nothing happens.
 - (void)removeChild:(SPDisplayObject *)child;
 
@@ -88,6 +104,12 @@
 
 /// Swaps the indexes of two children.
 - (void)swapChildAtIndex:(int)index1 withChildAtIndex:(int)index2;
+
+/// Sorts the children using the given NSComparator block. Only available in iOS 4 and above!
+- (void)sortChildren:(NSComparator)comparator;
+
+/// Dispatches an event on all children (recursively). The event must not bubble. */
+- (void)broadcastEvent:(SPEvent *)event;
 
 /// ----------------
 /// @name Properties
