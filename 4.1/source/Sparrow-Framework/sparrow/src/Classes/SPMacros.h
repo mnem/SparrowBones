@@ -69,4 +69,6 @@
 
 #define SP_CLAMP(value, min, max)   MIN((max), MAX((value), (min)))
 
+#define SP_SWAP(x, y, T)            do { T temp##x##y = x; x = y; y = temp##x##y; } while (0)
+
 #define SP_DEPRECATED               __attribute__((deprecated))
